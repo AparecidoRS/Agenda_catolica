@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Católica</title>
+
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="logo" id="logo">
+                <picture>
+                    <source media="(max-width: 750px)" srcset="images/Logos/Agenda_católica_-_Preto-p.png" type="image/png">
+                    <source media="(max-width: 1050px)" srcset="images/Logos/Agenda_católica_-_Preto-m.png" type="image/png">
+                    <img src="images/Logos/Agenda_católica_-_Verde.png" alt="Agenda Católica">
+                    <h1>Sua paroquia na web</h1>
+                </picture>
+                                
+                <br>
+                <select>
+                    <option> -------> Selecione uma paroquia <-------</option>
+                    <option value="paroquias.html">Paroquias</option>
+                    <option value="psocorroCvelNeva.html">PARÓQUIA NOSSA SENHORA DO PERPÉTUO SOCORRO</option>
+                    <option value="militarsantoinaciodeloyola.html">PARÓQUIA MILITAR SANTO INÁCIO DE LOYOLA</option>
+                    <option value="fatimacancelli.html">PARÓQUIA NOSSA SENHORA DE FÁTIMA - CANCELLI</option>
+                    <option value="caravaggio.html">PARÓQUIA NOSSA SENHORA DO CARAVAGGIO</option>
+                    <option value="santoantonio.html">PARÓQUIA SANTO ANTONIO</option>
+                    <option value="saocristovao.html">PARÓQUIA SÃO CRISTÓVÃO</option>
+                    <option value="saojoaobatista.html">PARÓQUIA SÃO JOÃO BATISTA</option>
+                    <option value="saopauloapostolo.html">PARÓQUIA SÃO PAULO APÓSTOLO</option>
+                </select>                
+            </div>
+        </section>
+        
+            <div id="contato">
+             
+               <picture>
+                    <source media="(max-width: 750px)" srcset="images/Contato/contato-p.png" type="image/png">
+                    <source media="(max-width: 750px)" srcset="images/Contato/contato-m.png" type="image/png">
+                    <img src="images/Contato/contato-g.png" alt="Contato">
+                </picture>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+<img src="images/nsap/NSAP-min.png" alt="">
+    </footer>
+    <script>
+         let selectEl = document.getElementsByTagName('select');
+                    selectEl[0].addEventListener('change', function() {
+                        location.href=this.value;
+                    });
+    </script>
+</body>
+</html>
