@@ -48,8 +48,10 @@
             background-color: lightgray;
         }
 
-        th.col {text-align: left;
+        td.num {
+            text-align: right;
         }
-        td.linha {
-            text-align: left;
+
+        td.horario {
+            text-align: center;
         }
