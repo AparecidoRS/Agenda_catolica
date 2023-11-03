@@ -3,51 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <title>Agenda Católica</title>
 
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+
+   <!--BOOTSTRAP ICONS-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+   <!--FIM BOOTSTRAP ICONS-->
+
     <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
     <main>
-        <section>
+        <section class="logo">
             <div class="logo" id="logo">
                 <picture>
-                    <source media="(max-width: 750px)" srcset="images/Logos/Agenda_católica_-_Preto-p.png" type="image/png">
-                    <source media="(max-width: 1050px)" srcset="images/Logos/Agenda_católica_-_Preto-m.png" type="image/png">
-                    <img src="images/Logos/Agenda_católica_-_Verde.png" alt="Agenda Católica">
-                    <h1>Sua paroquia na web</h1>
+                    <source media="(max-width: 750px)" srcset="images/logos/Agenda_católica_-_Preto-p.png" type="image/png">
+                    <source media="(max-width: 1050px)" srcset="images/logos/Agenda_católica_-_Preto-m.png" type="image/png">
+                    <img src="images/logos/Agenda_católica_-_Preto.png" alt="Agenda Católica">
+                    <h1 class="web">Sua paroquia na web</h1>
                 </picture>
                                 
                 <br>
-                <select>
-                    <option> -------> Selecione uma paroquia <-------</option>
-                    <option value="paroquias.html">Paroquias</option>
-                    <option value="psocorroCvelNeva.html">PARÓQUIA NOSSA SENHORA DO PERPÉTUO SOCORRO</option>
-                    <option value="militarsantoinaciodeloyola.html">PARÓQUIA MILITAR SANTO INÁCIO DE LOYOLA</option>
-                    <option value="fatimacancelli.html">PARÓQUIA NOSSA SENHORA DE FÁTIMA - CANCELLI</option>
-                    <option value="caravaggio.html">PARÓQUIA NOSSA SENHORA DO CARAVAGGIO</option>
-                    <option value="santoantonio.html">PARÓQUIA SANTO ANTONIO</option>
-                    <option value="saocristovao.html">PARÓQUIA SÃO CRISTÓVÃO</option>
-                    <option value="saojoaobatista.html">PARÓQUIA SÃO JOÃO BATISTA</option>
-                    <option value="saopauloapostolo.html">PARÓQUIA SÃO PAULO APÓSTOLO</option>
-                </select>                
+                <div class="select-container">
+                    <label for="paroquia"></label>
+                    <select class="select-box" id="paroquia">
+                        <option> Selecione a paroquia ou Diocese</option>
+                <!-- inicio optgroup Arquidiocese-->        
+                        <optgroup label="Arquidiocese / Diocese">
+                            <option value="arquicascavel.html">Arquidiocese de Cascavel-PR</option>
+                            <option value="Diocese de Foz do Iguaçu.html">Diocese de Foz do Iguaçu-PR</option>
+                            <option value="Diocese de Palmas - Francisco Beltrão.html">Diocese de Palmas - Francisco Beltrão</option>                            
+                            <option value="diocesedetoledo.html">Diocese de Toledo-PR</option>
+                        </optgroup>
+                        <!-- fim optgroup Arquidiocese--> 
+                <!-- inicio optgroup Paroquias--> 
+                            <optgroup label="Cascavel-PR">
+                            <option value="catedral.html">Catedral Nossa Senhora Aparecida De Cascavel</option>
+                            <option value="paróquia nossa senhora do perpétuo socorro.html">Paróquia Nossa Senhora Do Perpétuo Socorro</option>
+                            <option value="">Paróquia Militar Santo Inácio De Loyola</option>
+                            <option value="">Paróquia Nossa Senhora De Fátima - Cancelli</option>
+                            <option value="">Paróquia Nossa Senhora Do Caravaggio</option>
+                            <option value="">Paróquia Santo Antônio</option>
+                            <option value="">Paróquia São Cristóvão</option>
+                            <option value="">Paróquia São João Batista</option>
+                            <option value="">Paróquia São Paulo Apóstolo</option>
+                            
+                            
+                        </optgroup>
+                        <!-- fim optgroup Paroquias-->
+                    </select>
+                    
+                </div>
             </div>
-        </section>
-        
-            <div id="contato">
-             
-               <picture>
-                    <source media="(max-width: 750px)" srcset="images/Contato/contato-p.png" type="image/png">
-                    <source media="(max-width: 750px)" srcset="images/Contato/contato-m.png" type="image/png">
-                    <img src="images/Contato/contato-g.png" alt="Contato">
-                </picture>
-            </div>
-
+        </section>        
+                <div>    
+                   <picture class="picture">
+                        <source media="(max-width: 750px)" srcset="images/contato/contato_Mobile-p-380px.png" type="image/png">
+                        <source media="(max-width: 750px)" srcset="images/contato/contato_Mobile-m-1080px.png" type="image/png">
+                        <img src="images/contato/contato-g.png" alt="Contato">
+                    </picture>                     
+                </div>
         </section>
     </main>
     <footer>
-<img src="images/nsap/NSAP-min.png" alt="">
+        <div class="padroeira">
+<img src="images/nsap/nsap75px.png" alt="">
+<h3>Nossa Padroeira</h3>
+        </div>
     </footer>
     <script>
          let selectEl = document.getElementsByTagName('select');

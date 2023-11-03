@@ -11,6 +11,7 @@ body {
 h1 {
     font-family: 'Kaushan Script'; sans-serif;
     font-size: 3em;
+    color: var(--cor06);
 }
 
 h2 {
@@ -20,26 +21,41 @@ h2 {
 }
 
 :root {
---cor01: #418EF2;
---cor02: #224D73;
---cor03: #011624;
---cor04: #E2DEBF;
---cor05: #825834;
-/* degrade*/
---: #02182A;
---: #408AF5;
---: #0B2042;
+    --cor01: #418EF2;
+    --cor02: #224D73;
+    --cor03: #011624;
+    --cor04: #E2DEBF;
+    --cor05: #825834;
+    --cor06: #aab0b8;
+    /* degrade*/
+    --deg1: #02182A;
+    --deg2: #408AF5;
+    --deg3: #0B2042;
 }
 * {
     margin: 0px;
     padding: 0px;
 }
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--deg1);
+}
+body {
+    background-color: var(--deg1);
+    height: 100vh;
+}
 
 div#logo {
-    background-color: var(--cor02);
     padding: 10px 10px 50px 10px;
     text-align: center;
+    gap: 4%;
 }
+ select{
+    margin-top: 50px;
+
+ }
+
 div#responsivel {
     font-size: 1.2em;
     background-color: var(--cor01);
@@ -47,25 +63,86 @@ div#responsivel {
     text-align: center;
 }
 
-div#picture {
-    padding: 50px 10px 10px 10px;
-}
+.picture {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 100px 10px 100px 10px;
+ }
 
 div > div > texto{
-    display: block;
-    
-    
+    display: block;    
 }
-div#contato {
-
-    padding: 10px 10px 50px 10px;
-    text-align: center;
-}
-
 footer {
     background-color: var(--cor03);
     padding: 10px 10px 10px 10px;
     font-size: medium;
     color: var(--cor04);
     text-align: center;
+}
+footer {
+max-width: 100%;
+margin: 0 auto;
+}
+
+footer .div .padroeira{
+    max-width: 50%;
+    width: 100px;
+    height: 100px;
+    display: inline;
+    background-color: #825834;
+}
+
+.select-box{
+    margin:0;
+    gap: 8%;
+}
+.select-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 250px;
+    height: 50px;    
+    
+    
+    
+}
+.select-box{
+    text-align: left;
+    color: var(--deg1);
+    background-color: var(--cor01);
+    font-size: 20px;
+       
+}
+
+
+@media screen and (max-width: 1020px){
+    h1{
+        font-size: 30px;
+        margin-top: -30;
+        gap: 4%;
+    }
+
+    .picture {
+        padding: 50px 10px 10px 10px;
+     }
+/*select*/
+.select-box{
+    margin:0;
+    gap: 8%;
+}
+.select-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 250px;
+    height: 50px;
+}
+.select-box{
+    text-align: left;
+    width: 100%;
+    color: var(--deg1);
+    background-color: var(--cor01);
+    font-size: 100%;    
+}
 }

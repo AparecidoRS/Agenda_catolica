@@ -79,6 +79,22 @@ h2.titulo span {
 }
 
 
+h3.titulo {
+    color: var(--cor03);
+    font-size: 38px;
+    text-align: center;
+}
+
+h3.titulo span {
+    color: var(--cor01);
+}
+
+.secretariacuria p {
+    color: var(--cor03);
+    text-align: center;
+    background-color: #408AF5;
+}
+
 button:hover {
     border-bottom: 0px 0px 10px var(--deg2);
     transform: scale(1.05);
