@@ -400,6 +400,8 @@ footer .line-footer p i {
         font-size: 16px;
     }
 
+    
+
     /*CLASSE GERAL*/
     .flex {
         flex-direction: column;
@@ -513,4 +515,10 @@ footer .line-footer p i {
     section.especialidade .flex {
         gap: 10px;
     }
+    button {
+        display: none;
+    }
+
+    
+    
 }
