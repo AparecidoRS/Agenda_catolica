@@ -12,7 +12,9 @@
     --deg2: #408AF5;
     --deg3: #0B2042;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .flex {
     display: flex;
 }
@@ -50,11 +52,21 @@ body {
     text-align: center;
     text-transform: uppercase;
     gap: 4%;
+    }
+
+.contatoparoquia{
+    color: var(--cor01);    
+    text-align: center;
+    gap: 4%;
+}
+.contatoparoquia strong{
+    color: var(--cor04);   
 }
 
 .interface {
     max-width: 1280px;
     margin: 0 auto;
+
 }
 
 .btn-contato button {
@@ -120,6 +132,51 @@ header nav ul li {
 }
 
 /* FIM ESTILO DO CABEÇALHO */
+
+
+/*Inicio menu-mobile*/
+
+.menu-mobile {
+    text-align: center;
+}
+.material-icons {
+    font-size: 50px;
+    color: var(--cor01);
+}
+
+
+i#burguer:hover {
+    background-color: var(--cor05);
+    color: var(--cor03);
+}
+
+menu {
+    display: none;
+}
+menu > ul {
+    list-style-type: none;
+}
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--cor02);
+    color: var(--cor04);
+    border-top: 2px solid var(--deg3);
+}
+
+menu > ul > li > a:hover {
+    background-color: var(--cor01);
+} 
+
+.menu-mobile {
+    display: none;
+}
+
+
+/*Fim menu-mobile*/
+
 
 /* ESTILO DO TOPO DO SITE*/
 section.topo-do-site {
@@ -310,8 +367,38 @@ footer .line-footer p i {
     font-size: 40px;
 }
 
-/*ESTILO DO RODAPE*/
+/*button flutuante*/
+.button{
+    display: flexbox;
+    background-color: #408bf500;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 15px;
+    bottom: 330px;
+    width: 50px;
+    height: 130px;
+    padding: 2px 2px 1px 2px;
+    
+    }
+.button img {
+padding: 2px 2px 1px 2px;
+width: 80%;
+align-items: center;
+text-align: center;
+gap: 4%;
+}
+.button i{
+    color: var(--cor04);
+    font-size: 30px;
+}
+.button i:hover{
+    color: var(--deg2);    
+}
+/*button flutuante*/
 
+
+/*ESTILO DO RODAPE*/
 
 @media screen and (max-width: 1020px) {
 
@@ -418,5 +505,12 @@ footer .line-footer p i {
 
     section.especialidade .flex {
         gap: 10px;
+    }
+    button {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
     }
 }
