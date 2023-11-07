@@ -80,6 +80,10 @@ body {
     transition: .2s;
 }
 
+footer .logo-footer img{
+    border-radius: 20%;
+}
+
 h2.titulo {
     color: var(--cor03);
     font-size: 38px;

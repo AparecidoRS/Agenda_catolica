@@ -60,9 +60,13 @@ div#logo {
 
 .picture {
     display: block;
-    width: 90%;
+    
     text-align: center;
     padding: 100px 10px 100px 10px;
+ }
+
+ footer .padroeira img{
+    border-radius: 20%;
  }
 
 div > div > texto{

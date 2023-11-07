@@ -374,7 +374,9 @@ footer.agendacatolica {
     text-align: center;
     gap: 4px;
 }
-
+footer .logo-footer img{
+    border-radius: 20%;
+}
 
 /*button flutuante*/
 .button{
