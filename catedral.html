@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -13,12 +14,14 @@
     <!--FIM BOOTSTRAP ICONS-->
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/paroquias.css">
-    <title>Catedral Nossa Senhora Aparecida De Cascavel</title>
+    <link rel="stylesheet" href="style/tabelas.css">
+    
+    <title>Catedral Nossa Senhora Aparecida de Cascavel</title>
 
 </head>
 <body>
     <header id="inicio">
-        <div class="interface">
+        <div class="interface" id="menu">
             <div class="logo">
                <img src="images/Arquidiocese/cascavel/catedral.png"  class="imglogo" alt="">
                <img src="images/Arquidiocese/cascavel/catedral.png" class="imglogo2" alt="">
@@ -26,7 +29,6 @@
             </div><!--logo-->
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="paroquias.html">Início</a></li>  
                     <li><a href="#missas">Missas</a></li>
                     <li><a href="#Atendimento">Atendimento</a></li>
                     <li><a href="#cursos">Cursos</a></li>
@@ -42,10 +44,29 @@
                 </a>
             </div>
         </div><!--interface-->
-        <h1 class="logoparoquia">Catedral Nossa Senhora Aparecida De Cascavel</h1>
-        <p class="contatoparoquia">Rua Rio Grande do Sul, 590 - Centro - Cascavel-PR - <strong>45 99999-9999</strong></p>
+        <h1 class="logoparoquia">Catedral Nossa Senhora Aparecida de Cascavel</h1>
+        <p class="contatoparoquia"> Rua Rio Grande do Sul , 590 <strong> (45) 3223-1160 </strong></p>
     </header>
     <main>
+<!--menu-mobile-->
+<div class="menu-mobile" >
+    
+                        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+                        <menu id="itens">
+                            <ul>                        
+                        <li><a href="#missas">Missas</a></li>
+                        <li><a href="#Atendimento">Atendimento</a></li>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#pastorais">Pastorais</a></li>
+                        <li><a href="#pastorais">Movimentos</a></li>
+                        <li><a href="#plano">Plano Pastoral</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="index.html">Agenda Católica</a></li>        
+                            </ul>
+                        </menu>
+</div>
+
+<!--menu-mobile-->
 
 <!-- Atividades paroquiais-->
         <section class="topo-do-site">
@@ -53,16 +74,43 @@
                     <div class="flex">
                         <div class="txt-topo-site">
                             <h1>ATIVIDADES <span>PAROQUIAIS PARA HOJE.</span></h1>
-                            <p><strong>[Tabela com as atividades diarias] </strong></p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur maiores, porro id dignissimos commodi, totam repellendus eveniet sunt laboriosam doloribus tempora quaerat. Blanditiis perspiciatis officiis placeat, dolores nam itaque fugit.</p>
+                            
+                        <!--Inicio da ATIVIDADES DIOCESANO PARA HOJE-->
+            <div class="tabela">
+                <table>
+                    <CAption> NOVEMRO  </CAption>
+                    <thead>
+                            <tr>
+                                <th scope="col" >Data</th>
+                                <th scope="col" style="width: 70%;">Descrição</th>
+                            </tr>
+                    </thead>                        
+                <tbody>                                
+                    
+                    <tr>
+                        <td class="horario">06 a 08/11</td> 	<td>CNBB Regional Sul II: Festa estadual de Nossa Senhora do Rocio em Paranaguá;</td>
+                        </tr>
+                    <tr>
+                        <td class="horario">09/11</td>		<td>Movimento “Mães que oram pelos filhos”: Reunião da coordenação na paróquia Santo Antônio às 18h;</td>
+                        </tr>
+                    <tr>
+                        <td class="horario">10 a 12/11</td> 	<td>Movimento Reviver: Revivendo no CAF às 19h:</td>
+                        </tr>
+                    <tr>
+                        <td class="horario">10 a 15/11</td> 	<td>Conselho Missionário Diocesano – COMIDI: Congresso Missionário Nacional em Manaus/AM;</td>
+                        </tr>                    
+                    </tbody>
+                </table>       
+<!--Final da Tabela PLANO PASTORAL DIOCESANO-->    
+
+                            
+                <p><strong>Nosso propósito é</strong> divulgar horários e eventos na Igreja Católica, facilitando o acesso a informações vitais para as comunidades católicas. <strong>Não perca eventos importantes da Igreja Católica.</strong></p>
         
                             <div class="btn-contato">
                                 <a href="#plano"><button>Mais atividades</button></a>
                             </div>
                         </div><!--txt-topo-site-->
-                        <div class="img-top-site">
-                                <img src="images/Logos/mao.png" alt="">
-                        </div><!--img-top-site-->
+                        
                     </div><!--flex-->
                 </div><!--interfacee-->
         </section><!--topo-do-site-->
@@ -88,11 +136,15 @@
             </div><!--especialidade-box-->
             <div class="especialidade-box">
                 <i class="bi bi-clock"></i>
-                <H3>Horario de confissão</H3>
-                <p><p><strong>Segunda à Sexta-Feira</strong>
+                <H3>CONFISSÕES DURANTE <br>AS MISSAS</H3>
+                <p><p><strong>Quarta-feira: </strong>
                     <br>
-                    8h às 11h30 das 13h às 18h
-                    <br> <strong>Sábado</strong> <br>8h às 12h</p></p>
+                    12h15 <br> 
+                    <strong>Quinta-feira: </strong>
+                    <br>15h <br>
+                    <strong>Sábado e domingo: </strong>
+                    <br> 19h
+                </p>
             </div><!--especialidade-box-->
         </div><!--flex-->
     </div><!--interface-->
@@ -105,19 +157,151 @@
                 <div class="flex">
                     <div id="missas" class="txt-topo-site">
                         <h1>HORÁRIOS <span>DE MISSAS.</span></h1>
-                        <p><strong>[Tabela com as proximas missa 07 ou 05] </strong></p>
-                        <p>
-                            <strong>Segunda a sexta-feira: <br></strong>
-                            07h, 12h15 e 19h;<br> <br>
-                            
-                            <strong>Quinta-feira (Missa da Saúde):</strong> <br> 
-                            15h <br> <br>
-                            
-                            <strong>Sábados:</strong> <br> 
-                            12h15 e 19h; <br> <br>
-                            
-                            <strong>Domingos:</strong> <br>
-                            07h, 10h e 19h;</p> 
+                        
+                        <!--Inicio da Missas na PAROQUIA-->
+            <div class="tabela">
+                <table>
+               <!-- <CAption> Sexta-feira, 3 de novembro de 2003  </CAption>-->
+                    <thead>
+                            <tr>
+                                <th scope="col" >Data</th>
+                                <th scope="col" >Dia</th>
+                                <th scope="col" >Horarios</th>
+                                <th scope="col">Obs:</th>
+                            </tr>
+                    </thead>                        
+            <tbody>                                
+                            <tr>
+                                <td class="horario">07/nov</td>
+                                <td class="horario">Terça-feira</td>
+                                <td class="horario">07:00</td>
+                                <td class="horario"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="horario">07/nov</td>
+                                <td class="horario">Terça-feira</td>
+                                <td class="horario">12:15</td>
+                                <td class="horario"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="horario">07/nov</td>
+                                <td class="horario">Terça-feira</td>
+                                <td class="horario">19:00</td>
+                                <td class="horario"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="horario">08/nov</td>
+                                <td class="horario">Quarta-feira</td>
+                                <td class="horario">07:00</td>
+                                <td class="horario"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="horario">08/nov</td>
+                                <td class="horario">Quarta-feira</td>
+                                <td class="horario">12:15</td>
+                                <td class="horario"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="horario">08/nov</td>
+                                <td class="horario">Quarta-feira</td>
+                                <td class="horario">19:00</td>
+                                <td class="horario"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="horario">09/nov</td>
+                                <td class="horario">Quinta-feira</td>
+                                <td class="horario">07:00</td>
+                                <td class="horario"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="horario">09/nov</td>
+                                <td class="horario">Quinta-feira</td>
+                                <td class="horario">12:15</td>
+                                <td class="horario"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="horario">09/nov</td>
+                                <td class="horario">Quinta-feira</td>
+                                <td class="horario">15:00</td>
+                                <td class="horario">Missa da Saúde </td>
+                            </tr>
+
+                            <tr>
+                                <td class="horario">09/nov</td>
+                                <td class="horario">Quinta-feira</td>
+                                <td class="horario">19:00</td>
+                                <td class="horario"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="horario">10/nov</td>
+                                <td class="horario">Sexta-feira</td>
+                                <td class="horario">07:00</td>
+                                <td class="horario"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="horario">10/nov</td>
+                                <td class="horario">Sexta-feira</td>
+                                <td class="horario">12:15</td>
+                                <td class="horario"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="horario">10/nov</td>
+                                <td class="horario">Sexta-feira</td>
+                                <td class="horario">19:00</td>
+                                <td class="horario"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="horario">11/nov</td>
+                                <td class="horario">Sabado</td>
+                                <td class="horario">12:15</td>
+                                <td class="horario"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="horario">11/nov</td>
+                                <td class="horario">Sabado</td>
+                                <td class="horario">19:00</td>
+                                <td class="horario"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="horario">12/nov</td>
+                                <td class="horario">Domingo</td>
+                                <td class="horario">07:00</td>
+                                <td class="horario"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="horario">12/nov</td>
+                                <td class="horario">Domingo</td>
+                                <td class="horario">10:00</td>
+                                <td class="horario"></td>
+                            </tr>
+                            <tr>
+                                <td class="horario">12/nov</td>
+                                <td class="horario">Domingo</td>
+                                <td class="horario">19:00</td>
+                                <td class="horario"></td>
+                            </tr>
+                                
+                    </tbody>
+                </table>       
+            <!--Final da Missas na PAROQUIA-->
+
+
+            <p><strong>Nosso propósito</strong> é divulgar horários e eventos na Igreja Católica, facilitando o acesso a informações vitais para as comunidades católicas. <strong>Não perca horários de Missas.</strong></p>
                         
                         <div class="btn-contato">
                             <a href=""><button>Entre em contato</button></a>
@@ -156,8 +340,32 @@
                 <div class="flex">
                     <div id="pastorais" class="txt-topo-site">
                         <h1>PASTORAIS e <span>MOVIMENTOS.</span></h1>
-                        <p><strong>[Tabela com as pastorais e movimentos] </strong></p>
-                        <p>Ação pastoral da Igreja no Brasil ou simplesmente pastoral é a ação da Igreja Católica no mundo ou o conjunto de atividades pelas quais a Igreja realiza a sua missão de continuar a ação de Jesus Cristo junto a diferentes grupos e realidades.</p>
+                        
+                                    <!--Inicio PASTORAIS MOVIMENTOS PAROQUIAL-->
+            <div class="tabela">
+                <table>
+                <CAption> NOVEMBRO  </CAption>
+                    <thead>
+                            <tr>
+                                <th scope="col">Dia</th>
+                                <th scope="col">Pastoral/Movimeto</th>
+                                <th scope="col">Local</th>
+                            </tr>
+                    </thead>                        
+            <tbody>                                
+                            <tr>
+                                
+                                <tr>
+                                <td class="horario">04/11</td>
+                                <td scope="linha">Pastoral da Criança: Assembleia avaliativa</td>
+                                <td scope="linha">Paróquia São Cristóvão - Cascavel-PR</td>
+                                </tr>
+                    </tbody>
+                </table>       
+            <!--Final da PASTORAIS MOVIMENTOS Diocese PAROQUIAL-->
+
+
+                        <p><strong>Ação pastoral da Igreja no Brasil </strong>ou simplesmente pastoral é a ação da Igreja Católica no mundo ou o conjunto de atividades pelas quais a Igreja realiza a sua missão de <strong>continuar a ação de Jesus Cristo</strong> junto a diferentes grupos e realidades.</p>
                         
                         <div class="btn-contato">
                             <a href=""><button>Entre em contato</button></a>
@@ -175,8 +383,27 @@
                 <div class="flex">
                     <div id="plano" class="txt-topo-site">
                         <h1>PLANO <span>PASTORAL.</span></h1>
-                        <p><strong>[Tabela com Plano pastora da paroquia] </strong></p>
-                        <p>O plano pastoral é o resultado de um caminho trilhado pela comunidade em vista de um planejamento de evangelização.</p> 
+                        
+                        <!--Inicio da Tabela PLANO PASTORAL PAROQUIAL-->
+                        <div class="tabela">
+                            <table>
+                                <CAption> NOVEMRO  </CAption>
+                                <thead>
+                                        <tr>
+                                            <th scope="col" >Data</th>
+                                            <th scope="col" style="width: 70%;">Descrição</th>
+                                        </tr>
+                                </thead>                        
+                            <tbody>                                
+                                <tr>
+                                    
+                                    </tr> 
+                             </tbody>
+                            </table>       
+<!--Final da Tabela PLANO PASTORAL PAROQUIAL-->
+
+
+                        <p><strong>O plano pastoral</strong> é o resultado de um caminho trilhado pela comunidade em vista de um planejamento de evangelização.</p> 
                     
                         <div class="btn-contato">
                             <a href=""><button>Plano Diocesano</button></a>
@@ -195,24 +422,25 @@
                         <img src="images/Arquidiocese/cascavel/catedral.png" alt="" width="450">
                     </div><!--img-sobre-->
                     <div class="txt-sobre">
-                        <h2>Sobre:<span> Catedral Nossa Senhora Aparecida De Cascavel.</span></h2>
+                        <h2>Sobre:<span> Catedral Nossa Senhora Aparecida.</span></h2>
                         <p><strong>Paróquia</strong>: Diocesana<br>
                         <strong>Pároco: </strong>Pe. Divo de Conto <br>
                         <strong>Endereço:</strong> Rua Rio Grande do Sul , 590 <br>
                         <strong>Cidade</strong>: Cascavel - <strong>Bairro:</strong> Centro <br>
                         <strong>Estado</strong>: PR - <strong>CEP:</strong> 85801-010 <br>
-                        <strong>Telefones:</strong>(45) 3223-1160 <br>
+                        <strong>Telefones:</strong> (45) 3223-1160 <br>
                         <strong>Email</strong>: cascavelcatedral@gmail.com</p>
                     <div class="btn-social">
-                           <a href=""><button><i class="bi bi-instagram"></i></button></a>
-                            <a href=""><button><i class="bi bi-facebook"></i></button></a>
-                            <a href=""><button><i class="bi bi-youtube"></i></button></a>
+                           <a href="https://www.instagram.com/catedralnossasenhoraaparecida/"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.facebook.com/CatedralNossaSenhoraAparecida"><button><i class="bi bi-facebook"></i></button></a>
+                            <a href="https://www.youtube.com/@catedralnossasenhoraaparecida"><button><i class="bi bi-youtube"></i></button></a>
                         </div><!--btn-social-->
                     </div><!--txt-sobre-->
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--Sobre-->
     </main>
+    
     <footer>
         <div class="interface">
             <div class="line-footer">
@@ -230,14 +458,23 @@
             <div class="line-footer borda">
                 <h3>Ajude sua paroquia a mater esse serviço ativo.</h3>
                 <p class="pix" id="pix"><i class="bi bi-x-diamond-fill"></i>    Pix: <span>XXXXXXXXXXXXX</span></p>
-                <p class="valor">Chave pix da Catedral Nossa Senhora Aparecida <span>(identificar Ag. Catolica)</span></p>
+                <p class="valor"> Chave pix da paroquia <span>(identificar Ag. Catolica)</span></p>
         </div><!--line-footer-->
         </div><!--interface-->
-    </footer>
+        </footer>
     <button class="button">
         <a href="#"><i class="bi bi-caret-up-square-fill"></i></a> <br>
         <a href="#cursos"><i class="bi bi-distribute-vertical"></i></a> <br>
         <a href="#pix"><i class="bi bi-caret-down-square-fill"></i></a>
     </button>
-</body>
+    <script>
+        function clickMenu() {
+           if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+           } else {
+                itens.style.display = 'block'
+           }
+        }
+    </script>
+    </body>
 </html>

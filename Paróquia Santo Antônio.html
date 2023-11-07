@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -13,20 +14,21 @@
     <!--FIM BOOTSTRAP ICONS-->
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/paroquias.css">
+    <link rel="stylesheet" href="style/tabelas.css">
+    
     <title>Paroquias - Teste</title>
 
 </head>
 <body>
     <header id="inicio">
-        <div class="interface">
+        <div class="interface" id="menu">
             <div class="logo">
-               <img src="images/paroquias/LOGO-PAROQUIA.png"  class="imglogo" alt="">
-               <img src="images/paroquias/LOGO-PAROQUIA.png" class="imglogo2" alt="">
+               <img src="images/logoparoquia.png"  class="imglogo" alt="">
+               <img src="images/logoparoquia.png" class="imglogo2" alt="">
                
             </div><!--logo-->
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="paroquias.html">Início</a></li>  
                     <li><a href="#missas">Missas</a></li>
                     <li><a href="#Atendimento">Atendimento</a></li>
                     <li><a href="#cursos">Cursos</a></li>
@@ -43,8 +45,28 @@
             </div>
         </div><!--interface-->
         <h1 class="logoparoquia">Sua Paróquia na web</h1>
+        <p class="contatoparoquia"> Endereço da paroquia <strong>contato da paroquia</strong></p>
     </header>
     <main>
+<!--menu-mobile-->
+<div class="menu-mobile" >
+    
+                        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+                        <menu id="itens">
+                            <ul>                        
+                        <li><a href="#missas">Missas</a></li>
+                        <li><a href="#Atendimento">Atendimento</a></li>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#pastorais">Pastorais</a></li>
+                        <li><a href="#pastorais">Movimentos</a></li>
+                        <li><a href="#plano">Plano Pastoral</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="index.html">Agenda Católica</a></li>        
+                            </ul>
+                        </menu>
+</div>
+
+<!--menu-mobile-->
 
 <!-- Atividades paroquiais-->
         <section class="topo-do-site">
@@ -52,7 +74,36 @@
                     <div class="flex">
                         <div class="txt-topo-site">
                             <h1>ATIVIDADES <span>PAROQUIAIS PARA HOJE.</span></h1>
-                            <p><strong>[Tabela com as atividades diarias] </strong></p>
+                            
+                        <!--Inicio da ATIVIDADES DIOCESANO PARA HOJE-->
+            <div class="tabela">
+                <table>
+                    <CAption> NOVEMRO  </CAption>
+                    <thead>
+                            <tr>
+                                <th scope="col" >Data</th>
+                                <th scope="col" style="width: 70%;">Descrição</th>
+                            </tr>
+                    </thead>                        
+                <tbody>                                
+                    
+                    <tr>
+                        <td class="horario">06 a 08/11</td> 	<td>CNBB Regional Sul II: Festa estadual de Nossa Senhora do Rocio em Paranaguá;</td>
+                        </tr>
+                    <tr>
+                        <td class="horario">09/11</td>		<td>Movimento “Mães que oram pelos filhos”: Reunião da coordenação na paróquia Santo Antônio às 18h;</td>
+                        </tr>
+                    <tr>
+                        <td class="horario">10 a 12/11</td> 	<td>Movimento Reviver: Revivendo no CAF às 19h:</td>
+                        </tr>
+                    <tr>
+                        <td class="horario">10 a 15/11</td> 	<td>Conselho Missionário Diocesano – COMIDI: Congresso Missionário Nacional em Manaus/AM;</td>
+                        </tr>                    
+                    </tbody>
+                </table>       
+<!--Final da Tabela PLANO PASTORAL DIOCESANO-->    
+
+                            
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur maiores, porro id dignissimos commodi, totam repellendus eveniet sunt laboriosam doloribus tempora quaerat. Blanditiis perspiciatis officiis placeat, dolores nam itaque fugit.</p>
         
                             <div class="btn-contato">
@@ -104,7 +155,41 @@
                 <div class="flex">
                     <div id="missas" class="txt-topo-site">
                         <h1>HORÁRIOS <span>DE MISSAS.</span></h1>
-                        <p><strong>[Tabela com as proximas missa 07 ou 05] </strong></p>
+                        
+                        <!--Inicio da Missas na PAROQUIA-->
+            <div class="tabela">
+                <table>
+                <CAption> Sexta-feira, 3 de novembro de 2003  </CAption>
+                    <thead>
+                            <tr>
+                                <th scope="col" >Horarios</th>
+                                <th scope="col" style="width: 70%;">Local</th>
+                                <th scope="col">Cidade</th>
+                            </tr>
+                    </thead>                        
+            <tbody>                                
+                            <tr>
+                                <td class="horario">19:00</td>
+                                <td>Catedral Nossa Senhora Aparecida</td>
+                                <td>Cascavel-PR</td>
+                                </tr>
+                                <tr>
+                                <td class="horario">19:00</td>
+                                <td>Paróquia Santo Antonio</td>
+                                <td>Cascavel-PR</td>
+                                </tr>
+                                <tr>
+                                <td class="horario">20:00</td>
+                                <td>Paróquia Nossa Senhora do Perpétuo Socorro</td>
+                                <td>Cascavel-PR</td>
+                                </tr>
+                    </tbody>
+                </table>       
+            <!--Final da Missas na PAROQUIA-->
+
+
+
+
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur maiores, porro id dignissimos commodi, totam repellendus eveniet sunt laboriosam doloribus tempora quaerat. Blanditiis perspiciatis officiis placeat, dolores nam itaque fugit.</p> 
                         
                         <div class="btn-contato">
@@ -144,7 +229,31 @@
                 <div class="flex">
                     <div id="pastorais" class="txt-topo-site">
                         <h1>PASTORAIS e <span>MOVIMENTOS.</span></h1>
-                        <p><strong>[Tabela com as pastorais e movimentos] </strong></p>
+                        
+                                    <!--Inicio PASTORAIS MOVIMENTOS PAROQUIAL-->
+            <div class="tabela">
+                <table>
+                <CAption> NOVEMBRO  </CAption>
+                    <thead>
+                            <tr>
+                                <th scope="col">Dia</th>
+                                <th scope="col">Pastoral/Movimeto</th>
+                                <th scope="col">Local</th>
+                            </tr>
+                    </thead>                        
+            <tbody>                                
+                            <tr>
+                                
+                                <tr>
+                                <td class="horario">04/11</td>
+                                <td scope="linha">Pastoral da Criança: Assembleia avaliativa</td>
+                                <td scope="linha">Paróquia São Cristóvão - Cascavel-PR</td>
+                                </tr>
+                    </tbody>
+                </table>       
+            <!--Final da PASTORAIS MOVIMENTOS Diocese PAROQUIAL-->
+
+
                         <p>Ação pastoral da Igreja no Brasil ou simplesmente pastoral é a ação da Igreja Católica no mundo ou o conjunto de atividades pelas quais a Igreja realiza a sua missão de continuar a ação de Jesus Cristo junto a diferentes grupos e realidades.</p>
                         
                         <div class="btn-contato">
@@ -163,7 +272,26 @@
                 <div class="flex">
                     <div id="plano" class="txt-topo-site">
                         <h1>PLANO <span>PASTORAL.</span></h1>
-                        <p><strong>[Tabela com Plano pastora da paroquia] </strong></p>
+                        
+                        <!--Inicio da Tabela PLANO PASTORAL PAROQUIAL-->
+                        <div class="tabela">
+                            <table>
+                                <CAption> NOVEMRO  </CAption>
+                                <thead>
+                                        <tr>
+                                            <th scope="col" >Data</th>
+                                            <th scope="col" style="width: 70%;">Descrição</th>
+                                        </tr>
+                                </thead>                        
+                            <tbody>                                
+                                <tr>
+                                    
+                                    </tr> 
+                             </tbody>
+                            </table>       
+<!--Final da Tabela PLANO PASTORAL PAROQUIAL-->
+
+
                         <p>O plano pastoral é o resultado de um caminho trilhado pela comunidade em vista de um planejamento de evangelização.</p> 
                     
                         <div class="btn-contato">
@@ -180,7 +308,7 @@
             <div class="interface">
                 <div class="flex">
                     <div id="sobre" class="img-sobre">
-                        <img src="images/paroquias/LOGO-PAROQUIA.png" alt="" width="450">
+                        <img src="images/logoparoquia.png" alt="" width="450">
                     </div><!--img-sobre-->
                     <div class="txt-sobre">
                         <h2>Sobre:<span> Nome da Paroquia.</span></h2>
@@ -201,6 +329,7 @@
             </div><!--interface-->
         </section><!--Sobre-->
     </main>
+    
     <footer>
         <div class="interface">
             <div class="line-footer">
@@ -218,14 +347,23 @@
             <div class="line-footer borda">
                 <h3>Ajude sua paroquia a mater esse serviço ativo.</h3>
                 <p class="pix" id="pix"><i class="bi bi-x-diamond-fill"></i>    Pix: <span>XXXXXXXXXXXXX</span></p>
-                <p class="valor"> Chave pix da Paróquia Santo Antônio <span>(identificar Ag. Catolica)</span></p>
+                <p class="valor"> Chave pix da paroquia <span>(identificar Ag. Catolica)</span></p>
         </div><!--line-footer-->
         </div><!--interface-->
-    </footer>
+        </footer>
     <button class="button">
         <a href="#"><i class="bi bi-caret-up-square-fill"></i></a> <br>
         <a href="#cursos"><i class="bi bi-distribute-vertical"></i></a> <br>
         <a href="#pix"><i class="bi bi-caret-down-square-fill"></i></a>
     </button>
-</body>
+    <script>
+        function clickMenu() {
+           if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+           } else {
+                itens.style.display = 'block'
+           }
+        }
+    </script>
+    </body>
 </html>

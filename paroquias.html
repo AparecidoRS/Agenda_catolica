@@ -14,7 +14,9 @@
     <!--FIM BOOTSTRAP ICONS-->
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/paroquias.css">
-    <title>Paroquias - Teste</title>
+    <link rel="stylesheet" href="style/tabelas.css">
+    
+    <title>Nome da Paroquia</title>
 
 </head>
 <body>
@@ -42,7 +44,7 @@
                 </a>
             </div>
         </div><!--interface-->
-        <h1 class="logoparoquia">Sua Paróquia na web</h1>
+        <h1 class="logoparoquia">Nome da Paroquia</h1>
         <p class="contatoparoquia"> Endereço da paroquia <strong>contato da paroquia</strong></p>
     </header>
     <main>
@@ -59,7 +61,7 @@
                         <li><a href="#pastorais">Movimentos</a></li>
                         <li><a href="#plano">Plano Pastoral</a></li>
                         <li><a href="#sobre">Sobre</a></li>
-                                
+                        <li><a href="index.html">Agenda Católica</a></li>        
                             </ul>
                         </menu>
 </div>
@@ -72,16 +74,43 @@
                     <div class="flex">
                         <div class="txt-topo-site">
                             <h1>ATIVIDADES <span>PAROQUIAIS PARA HOJE.</span></h1>
-                            <p><strong>[Tabela com as atividades diarias] </strong></p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur maiores, porro id dignissimos commodi, totam repellendus eveniet sunt laboriosam doloribus tempora quaerat. Blanditiis perspiciatis officiis placeat, dolores nam itaque fugit.</p>
+                            
+                        <!--Inicio da ATIVIDADES DIOCESANO PARA HOJE-->
+            <div class="tabela">
+                <table>
+                    <CAption> NOVEMRO  </CAption>
+                    <thead>
+                            <tr>
+                                <th scope="col" >Data</th>
+                                <th scope="col" style="width: 70%;">Descrição</th>
+                            </tr>
+                    </thead>                        
+                <tbody>                                
+                    
+                    <tr>
+                        <td class="horario">06 a 08/11</td> 	<td>CNBB Regional Sul II: Festa estadual de Nossa Senhora do Rocio em Paranaguá;</td>
+                        </tr>
+                    <tr>
+                        <td class="horario">09/11</td>		<td>Movimento “Mães que oram pelos filhos”: Reunião da coordenação na paróquia Santo Antônio às 18h;</td>
+                        </tr>
+                    <tr>
+                        <td class="horario">10 a 12/11</td> 	<td>Movimento Reviver: Revivendo no CAF às 19h:</td>
+                        </tr>
+                    <tr>
+                        <td class="horario">10 a 15/11</td> 	<td>Conselho Missionário Diocesano – COMIDI: Congresso Missionário Nacional em Manaus/AM;</td>
+                        </tr>                    
+                    </tbody>
+                </table>       
+<!--Final da Tabela PLANO PASTORAL DIOCESANO-->    
+
+                            
+                    <p><strong>Nosso propósito é</strong> divulgar horários e eventos na Igreja Católica, facilitando o acesso a informações vitais para as comunidades católicas. <strong>Não perca eventos importantes da Igreja Católica.</strong></p>
         
                             <div class="btn-contato">
                                 <a href="#plano"><button>Mais atividades</button></a>
                             </div>
                         </div><!--txt-topo-site-->
-                        <div class="img-top-site">
-                                <img src="images/Logos/mao.png" alt="">
-                        </div><!--img-top-site-->
+                        
                     </div><!--flex-->
                 </div><!--interfacee-->
         </section><!--topo-do-site-->
@@ -124,8 +153,42 @@
                 <div class="flex">
                     <div id="missas" class="txt-topo-site">
                         <h1>HORÁRIOS <span>DE MISSAS.</span></h1>
-                        <p><strong>[Tabela com as proximas missa 07 ou 05] </strong></p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur maiores, porro id dignissimos commodi, totam repellendus eveniet sunt laboriosam doloribus tempora quaerat. Blanditiis perspiciatis officiis placeat, dolores nam itaque fugit.</p> 
+                        
+                        <!--Inicio da Missas na PAROQUIA-->
+            <div class="tabela">
+                <table>
+                <CAption> Sexta-feira, 3 de novembro de 2003  </CAption>
+                    <thead>
+                            <tr>
+                                <th scope="col" >Horarios</th>
+                                <th scope="col" style="width: 70%;">Local</th>
+                                <th scope="col">Cidade</th>
+                            </tr>
+                    </thead>                        
+            <tbody>                                
+                            <tr>
+                                <td class="horario">19:00</td>
+                                <td>Catedral Nossa Senhora Aparecida</td>
+                                <td>Cascavel-PR</td>
+                                </tr>
+                                <tr>
+                                <td class="horario">19:00</td>
+                                <td>Paróquia Santo Antonio</td>
+                                <td>Cascavel-PR</td>
+                                </tr>
+                                <tr>
+                                <td class="horario">20:00</td>
+                                <td>Paróquia Nossa Senhora do Perpétuo Socorro</td>
+                                <td>Cascavel-PR</td>
+                                </tr>
+                    </tbody>
+                </table>       
+            <!--Final da Missas na PAROQUIA-->
+
+                        <p><strong>Nosso propósito</strong> é divulgar horários e eventos na Igreja Católica, facilitando o acesso a informações vitais para as comunidades católicas. <strong>Não perca horários de Missas.</strong></p>
+
+
+                        
                         
                         <div class="btn-contato">
                             <a href=""><button>Entre em contato</button></a>
@@ -164,8 +227,32 @@
                 <div class="flex">
                     <div id="pastorais" class="txt-topo-site">
                         <h1>PASTORAIS e <span>MOVIMENTOS.</span></h1>
-                        <p><strong>[Tabela com as pastorais e movimentos] </strong></p>
-                        <p>Ação pastoral da Igreja no Brasil ou simplesmente pastoral é a ação da Igreja Católica no mundo ou o conjunto de atividades pelas quais a Igreja realiza a sua missão de continuar a ação de Jesus Cristo junto a diferentes grupos e realidades.</p>
+                        
+                                    <!--Inicio PASTORAIS MOVIMENTOS PAROQUIAL-->
+            <div class="tabela">
+                <table>
+                <CAption> NOVEMBRO  </CAption>
+                    <thead>
+                            <tr>
+                                <th scope="col">Dia</th>
+                                <th scope="col">Pastoral/Movimeto</th>
+                                <th scope="col">Local</th>
+                            </tr>
+                    </thead>                        
+            <tbody>                                
+                            <tr>
+                                
+                                <tr>
+                                <td class="horario">04/11</td>
+                                <td scope="linha">Pastoral da Criança: Assembleia avaliativa</td>
+                                <td scope="linha">Paróquia São Cristóvão - Cascavel-PR</td>
+                                </tr>
+                    </tbody>
+                </table>       
+            <!--Final da PASTORAIS MOVIMENTOS Diocese PAROQUIAL-->
+
+
+                        <p><strong>Ação pastoral da Igreja no Brasil</strong> ou simplesmente pastoral é a ação da Igreja Católica no mundo ou o conjunto de atividades pelas quais a Igreja realiza a sua missão de <strong>continuar a ação de Jesus Cristo</strong> junto a diferentes grupos e realidades.</p>
                         
                         <div class="btn-contato">
                             <a href=""><button>Entre em contato</button></a>
@@ -183,7 +270,26 @@
                 <div class="flex">
                     <div id="plano" class="txt-topo-site">
                         <h1>PLANO <span>PASTORAL.</span></h1>
-                        <p><strong>[Tabela com Plano pastora da paroquia] </strong></p>
+                        
+                        <!--Inicio da Tabela PLANO PASTORAL PAROQUIAL-->
+                        <div class="tabela">
+                            <table>
+                                <CAption> NOVEMRO  </CAption>
+                                <thead>
+                                        <tr>
+                                            <th scope="col" >Data</th>
+                                            <th scope="col" style="width: 70%;">Descrição</th>
+                                        </tr>
+                                </thead>                        
+                            <tbody>                                
+                                <tr>
+                                    
+                                    </tr> 
+                             </tbody>
+                            </table>       
+<!--Final da Tabela PLANO PASTORAL PAROQUIAL-->
+
+
                         <p>O plano pastoral é o resultado de um caminho trilhado pela comunidade em vista de um planejamento de evangelização.</p> 
                     
                         <div class="btn-contato">
@@ -242,7 +348,7 @@
                 <p class="valor"> Chave pix da paroquia <span>(identificar Ag. Catolica)</span></p>
         </div><!--line-footer-->
         </div><!--interface-->
-    </footer>
+        </footer>
     <button class="button">
         <a href="#"><i class="bi bi-caret-up-square-fill"></i></a> <br>
         <a href="#cursos"><i class="bi bi-distribute-vertical"></i></a> <br>

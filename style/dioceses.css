@@ -146,8 +146,52 @@ header nav ul li {
     display: inline-block;
     padding: 0 8px;
 }
-
 /* FIM ESTILO DO CABEÇALHO */
+
+/*Inicio menu-mobile*/
+
+.menu-mobile {
+    text-align: center;
+}
+.material-icons {
+    font-size: 50px;
+    color: var(--cor01);
+}
+
+
+i#burguer:hover {
+    background-color: var(--cor05);
+    color: var(--cor03);
+}
+
+menu {
+    display: none;
+}
+menu > ul {
+    list-style-type: none;
+}
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--cor02);
+    color: var(--cor04);
+    border-top: 2px solid var(--deg3);
+}
+
+menu > ul > li > a:hover {
+    background-color: var(--cor01);
+} 
+
+.menu-mobile {
+    display: none;
+}
+
+
+/*Fim menu-mobile*/
+
+
 
 /* ESTILO DO TOPO DO SITE*/
 section.topo-do-site {
@@ -199,6 +243,8 @@ section.topo-do-site .atend h1 span{
 .topo-do-site .txt-topo-site p {
     font-size: 18px;
     margin: 40px 0;
+    text-align: justify;
+    text-indent: 30px; 
 }
 
 .topo-do-site .img-top-site img {
@@ -517,6 +563,9 @@ footer .line-footer p i {
     }
     button {
         display: none;
+    }
+    .menu-mobile {
+        display: block;
     }
 
     

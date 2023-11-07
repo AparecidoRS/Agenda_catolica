@@ -206,6 +206,8 @@ section.topo-do-site .flex {
 .topo-do-site .txt-topo-site p {
     font-size: 18px;
     margin: 40px 0;
+    text-align: justify;
+    text-indent: 30px; 
 }
 
 .topo-do-site .img-top-site img {
@@ -366,6 +368,13 @@ footer .line-footer p span {
 footer .line-footer p i {
     font-size: 40px;
 }
+
+footer.agendacatolica {
+   align-items: center;
+    text-align: center;
+    gap: 4px;
+}
+
 
 /*button flutuante*/
 .button{
