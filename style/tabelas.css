@@ -12,46 +12,56 @@
     --deg2: #408AF5;
     --deg3: #0B2042;
 }
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            position: relative;
-        }
-        td, th {
-            border: 1px solid black;
-            padding: 10px;
-        }
-        caption {
-            font-size: 1.5em;
-            font-weight: bold;
-            padding: 10px;
-            background-color: var(--cor02);            
-        }
 
-        thead, tfoot {
-            background-color: var(--cor03);
-            color: white;
-        }
-        thead > tr > th {
-            position: sticky;
-            top: -1px;
-            background-color: var(--cor01);
-        }
-        tbody > tr:nth-child(odd) { /* 2n-1 */
-            background-color: white;
-        }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-        tbody > tr:nth-child(even) { /* 2n */
-            background-color: lightgray;
-        }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+}
 
-        td.num {
-            text-align: right;
-        }
+td,
+th {
+    border: 1px solid black;
+    padding: 10px;
+}
 
-        td.horario {
-            text-align: center;
-        }
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: var(--cor02);
+}
+
+thead,
+tfoot {
+    background-color: var(--cor03);
+    color: white;
+}
+
+thead>tr>th {
+    position: sticky;
+    top: -1px;
+    background-color: var(--cor01);
+}
+
+tbody>tr:nth-child(odd) {
+    /* 2n-1 */
+    background-color: white;
+}
+
+tbody>tr:nth-child(even) {
+    /* 2n */
+    background-color: lightgray;
+}
+
+td.num {
+    text-align: right;
+}
+
+td.horario {
+    text-align: center;
+}

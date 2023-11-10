@@ -4,19 +4,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    font-family: 'work Sans'Arial, Helvetica, sans-serif;
+    font-family: 'work Sans' Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: black;
 }
+
 h1 {
-    font-family: 'Kaushan Script'; sans-serif;
+    font-family: 'Kaushan Script';
+    sans-serif;
     font-size: 3em;
     color: var(--cor06);
 }
 
 h2 {
 
-    font-family: 'Kaushan Script'; sans-serif;
+    font-family: 'Kaushan Script';
+    sans-serif;
     font-size: 2em;
 }
 
@@ -32,14 +35,16 @@ h2 {
     --deg2: #408AF5;
     --deg3: #0B2042;
 }
+
 * {
     margin: 0px;
     padding: 0px;
 }
+
 main {
     max-width: 1200px;
     margin: 0 auto;
-   background-color: var(--deg1)    
+    background-color: var(--deg1)
 }
 
 body {
@@ -53,25 +58,27 @@ div#logo {
     text-align: center;
     gap: 4%;
 }
- select{
+
+select {
     margin-top: 50px;
 
- }
+}
 
 .picture {
     display: block;
-    
+
     text-align: center;
     padding: 100px 10px 100px 10px;
- }
-
- footer .padroeira img{
-    border-radius: 20%;
- }
-
-div > div > texto{
-    display: block;    
 }
+
+footer .padroeira img {
+    border-radius: 20%;
+}
+
+div>div>texto {
+    display: block;
+}
+
 footer {
     background-color: var(--cor03);
     padding: 10px 10px 10px 10px;
@@ -79,12 +86,13 @@ footer {
     color: var(--cor04);
     text-align: center;
 }
+
 footer {
-max-width: 100%;
-margin: 0 auto;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-footer .div .padroeira{
+footer .div .padroeira {
     max-width: 50%;
     width: 100px;
     height: 100px;
@@ -92,32 +100,34 @@ footer .div .padroeira{
     background-color: #825834;
 }
 
-.select-box{
-    margin:0;
+.select-box {
+    margin: 0;
     gap: 8%;
-    
+
 }
-.select-container{
+
+.select-container {
     display: flex;
     justify-content: center;
     position: relative;
     min-width: 250px;
     height: 50px;
-        
-    
-    
-    
+
+
+
+
 }
-.select-box{
+
+.select-box {
     text-align: left;
     color: var(--deg1);
     background-color: var(--cor01);
-    font-size: 20px;       
+    font-size: 20px;
 }
 
 
-@media screen and (max-width: 1020px){
-    h1{
+@media screen and (max-width: 1020px) {
+    h1 {
         font-size: 30px;
         margin-top: -30;
         gap: 4%;
@@ -125,24 +135,27 @@ footer .div .padroeira{
 
     .picture {
         padding: 50px 10px 10px 10px;
-     }
-/*select*/
-.select-box{
-    margin:0;
-    gap: 8%;
-}
-.select-container{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    min-width: 250px;
-    height: 50px;
-}
-.select-box{
-    text-align: left;
-    width: 100%;
-    color: var(--deg1);
-    background-color: var(--cor01);
-    font-size: 100%;    
-}
+    }
+
+    /*select*/
+    .select-box {
+        margin: 0;
+        gap: 8%;
+    }
+
+    .select-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        min-width: 250px;
+        height: 50px;
+    }
+
+    .select-box {
+        text-align: left;
+        width: 100%;
+        color: var(--deg1);
+        background-color: var(--cor01);
+        font-size: 100%;
+    }
 }

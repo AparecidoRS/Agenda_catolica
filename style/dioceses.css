@@ -13,8 +13,10 @@
     --deg2: #408AF5;
     --deg3: #0B2042;
 }
-html{
-    scroll-behavior: smooth;}
+
+html {
+    scroll-behavior: smooth;
+}
 
 .flex {
     display: flex;
@@ -45,23 +47,24 @@ body {
 }
 
 .imglogo2 {
-    display: none;  
+    display: none;
 }
 
-.logoparoquia{
-    color: var(--cor01);    
+.logoparoquia {
+    color: var(--cor01);
     text-align: center;
     text-transform: uppercase;
     gap: 4%;
 }
 
-.contatoparoquia{
-    color: var(--cor01);    
+.contatoparoquia {
+    color: var(--cor01);
     text-align: center;
     gap: 4%;
 }
-.contatoparoquia strong{
-    color: var(--cor04);   
+
+.contatoparoquia strong {
+    color: var(--cor04);
 }
 
 .interface {
@@ -80,7 +83,7 @@ body {
     transition: .2s;
 }
 
-footer .logo-footer img{
+footer .logo-footer img {
     border-radius: 20%;
 }
 
@@ -150,6 +153,7 @@ header nav ul li {
     display: inline-block;
     padding: 0 8px;
 }
+
 /* FIM ESTILO DO CABEÇALHO */
 
 /*Inicio menu-mobile*/
@@ -157,6 +161,7 @@ header nav ul li {
 .menu-mobile {
     text-align: center;
 }
+
 .material-icons {
     font-size: 50px;
     color: var(--cor01);
@@ -171,10 +176,12 @@ i#burguer:hover {
 menu {
     display: none;
 }
-menu > ul {
+
+menu>ul {
     list-style-type: none;
 }
-menu > ul > li > a {
+
+menu>ul>li>a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -184,9 +191,9 @@ menu > ul > li > a {
     border-top: 2px solid var(--deg3);
 }
 
-menu > ul > li > a:hover {
+menu>ul>li>a:hover {
     background-color: var(--cor01);
-} 
+}
 
 .menu-mobile {
     display: none;
@@ -212,7 +219,7 @@ section.topo-do-site .flex {
     gap: 90px;
 }
 
-section.topo-do-site .atend{
+section.topo-do-site .atend {
     background-color: var(--cor07);
     box-shadow: 0 0 10px var(--cor01);
     padding: 40px 8%;
@@ -221,18 +228,18 @@ section.topo-do-site .atend{
     text-align: center;
 }
 
-section.topo-do-site .atend h1 span{
+section.topo-do-site .atend h1 span {
     color: var(--cor01);
 }
 
-    section.topo-do-site .atend p{
-        font-size: 20px;
-    }
+section.topo-do-site .atend p {
+    font-size: 20px;
+}
 
-    section.topo-do-site .atend i{
-        color: var(--deg2);
-        font-size: 50px;
-    }
+section.topo-do-site .atend i {
+    color: var(--deg2);
+    font-size: 50px;
+}
 
 .topo-do-site h1 {
     color: var(--cor03);
@@ -248,7 +255,7 @@ section.topo-do-site .atend h1 span{
     font-size: 18px;
     margin: 40px 0;
     text-align: justify;
-    text-indent: 30px; 
+    text-indent: 30px;
 }
 
 .topo-do-site .img-top-site img {
@@ -257,7 +264,7 @@ section.topo-do-site .atend h1 span{
 }
 
 /*button flutuante*/
-.button{
+.button {
     display: flexbox;
     background-color: #408bf500;
     border: none;
@@ -268,22 +275,26 @@ section.topo-do-site .atend h1 span{
     width: 50px;
     height: 130px;
     padding: 2px 2px 1px 2px;
-    
-    }
-.button img {
-padding: 2px 2px 1px 2px;
-width: 80%;
-align-items: center;
-text-align: center;
-gap: 4%;
+
 }
-.button i{
+
+.button img {
+    padding: 2px 2px 1px 2px;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    gap: 4%;
+}
+
+.button i {
     color: var(--cor04);
     font-size: 30px;
 }
-.button i:hover{
-    color: var(--deg2);    
+
+.button i:hover {
+    color: var(--deg2);
 }
+
 /*button flutuante*/
 
 
@@ -446,51 +457,54 @@ footer .line-footer p i {
 
 @media screen and (max-width: 1020px) {
 
-    section.topo-do-site .atend p{
+    section.topo-do-site .atend p {
         font-size: 16px;
     }
 
-    
+
 
     /*CLASSE GERAL*/
     .flex {
         flex-direction: column;
     }
+
     .imglogo {
         display: none;
     }
 
     .imglogo2 {
-       margin-top: -30px;
-       padding: auto;
-       display: block;
-       width: 100%;
-       text-align: center;
+        margin-top: -30px;
+        padding: auto;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
+
     .topo-do-site .img-top-site img {
         display: none;
     }
 
-    h2.titulo{
+    h2.titulo {
         font-size: 30px;
         line-height: 40px;
     }
 
-    .logoparoquia{
+    .logoparoquia {
         font-size: 20px;
-        color: var(--cor01);    
+        color: var(--cor01);
         text-align: center;
         text-transform: uppercase;
         gap: 4%;
     }
 
-    .contatoparoquia{
-        color: var(--cor01);    
+    .contatoparoquia {
+        color: var(--cor01);
         text-align: center;
         gap: 4%;
     }
-    .contatoparoquia strong{
-        color: var(--cor04);   
+
+    .contatoparoquia strong {
+        color: var(--cor04);
     }
 
     /*CABEÇALHO*/
@@ -514,7 +528,7 @@ footer .line-footer p i {
         font-size: 30px;
         line-height: 35px;
     }
-   
+
 
     /* ESPECIALIDADES*/
     section.especialidade {
@@ -525,16 +539,19 @@ footer .line-footer p i {
     section.sobre {
         padding: 30px 8%;
     }
+
     .sobre .txt-sobre h2 {
         font-size: 28px;
         line-height: 35px;
         margin-bottom: 30px;
         margin-top: -10px;
-    }    
+    }
+
     .btn-social {
         text-align: center;
     }
-    .img-sobre img{
+
+    .img-sobre img {
         width: 100%;
         height: 80%;
     }
@@ -545,19 +562,22 @@ footer .line-footer p i {
         text-align: center;
         gap: 4px;
     }
+
     footer .line-footer .valor {
         font-size: .8em;
     }
+
     .especialidade .especialidade-box h3 {
         font-size: 23px;
         margin: 10px 0;
         color: var(--cor03);
     }
-    .especialidade .especialidade-box p strong{
+
+    .especialidade .especialidade-box p strong {
         color: var(--cor01);
     }
 
-    .especialidade .especialidade-box p{
+    .especialidade .especialidade-box p {
         color: var(--cor03);
         font-size: 1.2em;
     }
@@ -565,13 +585,15 @@ footer .line-footer p i {
     section.especialidade .flex {
         gap: 10px;
     }
+
     button {
         display: none;
     }
+
     .menu-mobile {
         display: block;
     }
 
-    
-    
+
+
 }
