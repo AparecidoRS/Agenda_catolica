@@ -8,6 +8,7 @@
     --cor05: #825834;
     --cor06: #f2f2f2;
     --cor07: #aab0b8;
+    --cor08: #ffffff;
     /* degrade*/
     --deg1: #02182A;
     --deg2: #408AF5;
@@ -49,7 +50,7 @@ body {
 }
 
 .logoparoquia{
-    color: var(--cor01);    
+    color: var(--cor08);    
     text-align: center;
     text-transform: uppercase;
     gap: 4%;
