@@ -56,6 +56,14 @@ body {
     gap: 4%;
     }
 
+.diocese {
+    font-size: 1.2em;
+        color: var(--cor07);    
+        text-align: center;
+        text-transform: uppercase;
+        gap: 4%;
+ }
+
 .contatoparoquia{
     color: var(--cor04);    
     text-align: center;
@@ -455,12 +463,15 @@ gap: 4%;
 
     .logoparoquia{
         font-size: 20px;
-        color: var(--cor01);    
+        color: var(--cor08);    
         text-align: center;
         text-transform: uppercase;
         gap: 4%;
     }
-
+    .diocese {
+        font-size: 1em;
+        
+     }
     /*CABEÇALHO*/
     .menu-desktop,
     .btn-contato {

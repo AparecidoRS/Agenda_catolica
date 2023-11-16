@@ -10,8 +10,7 @@ body {
 }
 
 h1 {
-    font-family: 'Kaushan Script';
-    sans-serif;
+    font-family: 'Kaushan Script'; 
     font-size: 3em;
     color: var(--cor06);
 }
@@ -19,7 +18,6 @@ h1 {
 h2 {
 
     font-family: 'Kaushan Script';
-    sans-serif;
     font-size: 2em;
 }
 

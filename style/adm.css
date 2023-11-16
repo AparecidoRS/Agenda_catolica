@@ -1,0 +1,110 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'work Sans' Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+
+:root {
+    --cor01: #418EF2;
+    --cor02: #224D73;
+    --cor03: #011624;
+    --cor04: #E2DEBF;
+    --cor05: #825834;
+    --cor06: #f2f2f2;
+    --cor07: #aab0b8;
+    --cor08: #ffffff;
+    /* degrade*/
+    --deg1: #02182A;
+    --deg2: #408AF5;
+    --deg3: #0B2042;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cor02);
+    height: 500px;
+}
+
+section.setores{
+    padding: 40px 4%;
+}
+
+section.setores .flex{
+    gap: 60px ;
+}
+section.setores img{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+section.setores h1{
+    font-family: 'Kaushan Script'; 
+    text-align: center;
+    color: var(--cor08);
+}
+section.setores h1 span{
+    color: var(--cor01);
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.interface .interface-box{
+    display: inline-block;
+    color: var(--cor06);
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    background-color: var(--cor03);
+    transition: .2s;
+}
+
+.interface .interface-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px;
+}
+
+.interface .interface-box i {
+    font-size:  50px;
+    color: #418EF2;
+}
+.interface .interface-box h1{
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+h1{
+    color: var(--cor08);
+}
+
+input[type=submit] {
+    margin: auto;  
+    margin-top: 45px;
+    display: block;
+    font-size: 1.2em;
+    width: 200px;
+    height: 40px;
+    background-color: var(--cor01);
+    color: var(--cor04);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
