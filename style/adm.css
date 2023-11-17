@@ -108,3 +108,9 @@ input[type=submit] {
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1020px){
+    .flex {
+        flex-direction: column;
+    }
+}
