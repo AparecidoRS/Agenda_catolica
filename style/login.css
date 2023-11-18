@@ -37,7 +37,7 @@ body{
 .container{
     max-width: 1280px;
     margin: 2px auto;
-    padding: 0 4%;
+    padding: 0 3%;
 } 
 .form-container .container img{
     display: flex;
@@ -94,7 +94,7 @@ form .input-single .input:valid ~ label{
     text-align: center;    
 }
 form input[type=submit]{
-    padding: 10px 40px;
+    padding: 10px 30px;
     border: 0;
     border-radius: 10px;
     background-color: var(--cor01);

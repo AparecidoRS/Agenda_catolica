@@ -37,11 +37,11 @@ body{
 }
 
 section.setores{
-    padding: 40px 4%;
+    padding: 30px 4%;
 }
 
 section.setores .flex{
-    gap: 60px ;
+    gap: 20px ;
 }
 section.setores img{
     display: flex;
@@ -60,7 +60,6 @@ section.setores h1 span{
 }
 .interface{
     max-width: 1280px;
-    margin: 0 auto;
 }
 
 .flex{
@@ -72,7 +71,7 @@ section.setores h1 span{
     color: var(--cor06);
     padding: 40px;
     border-radius: 20px;
-    margin-top: 45px;
+    margin-top: 40px;
     background-color: var(--cor03);
     transition: .2s;
 }
@@ -83,6 +82,9 @@ section.setores h1 span{
 }
 
 .interface .interface-box i {
+    margin: auto;
+    display: block;
+    text-align: center;
     font-size:  50px;
     color: #418EF2;
 }
@@ -93,6 +95,19 @@ section.setores h1 span{
 
 h1{
     color: var(--cor08);
+}
+
+h2 {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+p {
+    padding: 15px 0px 0px 0px;
+    margin: auto;
+    display: block;
+    text-align: center;
 }
 
 input[type=submit] {
@@ -112,5 +127,8 @@ input[type=submit] {
 @media screen and (max-width: 1020px){
     .flex {
         flex-direction: column;
+    }
+    section.setores .flex{
+        gap: 10px ;
     }
 }
