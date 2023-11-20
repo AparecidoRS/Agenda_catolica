@@ -148,6 +148,7 @@ header a {
 
 header a:hover {
     color: white;
+    border-bottom: 4px solid var(--cor01);
     transform: scale(1.05);
 }
 
