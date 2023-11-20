@@ -119,16 +119,3 @@ footer > .rodape > p a{
         border-bottom: 2px solid var(--cor01);
         
     }
-
-    .btn-contato button {
-        display:inline-block;
-        margin: auto;
-        padding: 10px 40px;
-        font-size: 18;
-        font-weight: 600;
-        background-color: var(--cor01);
-        border: 0;
-        border-radius: 30px;
-        cursor: pointer;
-        transition: .2s;
-    }
