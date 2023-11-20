@@ -67,6 +67,12 @@ body {
     color: var(--cor04);
 }
 
+.mapa {
+    text-decoration: none;
+    text-align: center;
+    gap: 4%;
+}
+
 .interface {
     max-width: 1280px;
     margin: 0 auto;
@@ -422,6 +428,15 @@ footer .line-footer p i {
 .borda {
     border-top: 2px solid var(--cor01);
 }
+
+main .mapa { 
+    padding: 1px;
+    margin: auto;  
+    display: block;
+    text-align: center;
+    max-width: 1380px;
+}
+
 
 footer .line-footer h3 {
     color: white;
