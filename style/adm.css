@@ -41,6 +41,7 @@ section.setores{
 }
 
 section.setores .flex{
+    margin: auto;
     gap: 20px ;
 }
 section.setores img{
