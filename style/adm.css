@@ -42,7 +42,7 @@ section.setores{
 
 section.setores .flex{
     margin: auto;
-    gap: 20px ;
+    gap: 30px ;
 }
 section.setores img{
     display: flex;
