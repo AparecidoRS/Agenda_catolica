@@ -29,6 +29,9 @@ body{
     margin: auto;
     max-width: 200px;
 }
+
+
+
 p {
     display: block;
     text-align: center;
@@ -55,6 +58,12 @@ p {
     padding: .80rem;
     border-radius: .45rem;
     font-size: 1.2em;
+}
+
+.usuario{
+    text-align: center;
+    margin: auto;
+    margin: 30px 0px -30px 0px;
 }
 
 
