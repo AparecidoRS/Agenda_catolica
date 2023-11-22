@@ -36,13 +36,18 @@ body{
     height: 500px;
 }
 
-section.setores{
-    padding: 30px 4%;
+section{
+    display: inline-block;
+    text-align: center;
 }
+
+section.setores{
+    margin: auto;       
+    }
 
 section.setores .flex{
     margin: auto;
-    gap: 30px ;
+    gap: 20px ;
 }
 section.setores img{
     display: flex;
