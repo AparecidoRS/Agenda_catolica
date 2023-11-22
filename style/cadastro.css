@@ -80,15 +80,13 @@ div h1{
 h2{
     padding: 10px;
     text-align: center;
-    font-size: 2em;
     color: var(--cor03);
 }
-
 
 p{
     padding: 10px;
     color: var(--cor09);
-    font-size: 1.3em;
+    font-size: 1.5em;
     text-align: justify;
     text-indent: 30px; 
 }
@@ -143,8 +141,8 @@ footer > .rodape > p a{
 
         p{
             padding: 10px;
-            font-size:18px;
-            text-align: center;
-            text-indent: 0px; 
+            font-size:20px;
+            text-align: justify;
+            text-indent: 20px; 
         }
     }
