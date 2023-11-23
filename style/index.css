@@ -128,7 +128,7 @@ footer .div .padroeira {
 
 /*-----------Formatação do rodapé--------------------*/
 
-footer{       
+footer{   
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -137,6 +137,10 @@ footer{
     padding: 3%;
     text-decoration: none;
     }
+footer hr {
+        display: none;
+    }
+
 
 .rodape{
       text-align: center;
@@ -220,4 +224,7 @@ footer{
             padding: 3%;
             text-decoration: none;
             }
+    footer hr {
+        display: block;
+    }
     }
