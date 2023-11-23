@@ -27,7 +27,9 @@ h2 {
     --cor03: #011624;
     --cor04: #E2DEBF;
     --cor05: #825834;
-    --cor06: #aab0b8;
+    --cor06: #f2f2f2;
+    --cor07: #aab0b8;
+    --cor08: #ffffff;
     /* degrade*/
     --deg1: #02182A;
     --deg2: #408AF5;
@@ -76,7 +78,7 @@ footer .padroeira img {
 div>div>texto {
     display: block;
 }
-
+/*
 footer {
     background-color: var(--cor03);
     padding: 10px 10px 10px 10px;
@@ -97,7 +99,7 @@ footer .div .padroeira {
     display: inline;
     background-color: #825834;
 }
-
+*/
 .select-box {
     margin: 0;
     gap: 8%;
@@ -122,6 +124,56 @@ footer .div .padroeira {
     background-color: var(--cor01);
     font-size: 20px;
 }
+
+
+/*-----------Formatação do rodapé--------------------*/
+
+footer{       
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: var(--cor08);
+    padding: 3%;
+    text-decoration: none;
+    }
+
+.rodape{
+      text-align: center;
+      
+}
+
+.rodape h3{
+    color: var(--cor01);
+    padding: 10px;
+    font-size: 25px;
+}
+
+.rodape p{
+    padding: 5px;
+    font-size: 20px;
+}
+
+.rodape p a{
+    text-decoration: none;
+    color: var(--cor08);
+     
+}
+
+.rodape img {
+    border-radius: 10%;
+}
+
+.rodape i#whatsapp{
+    color: #257322;
+
+}
+
+.rodape i{
+    color: var(--cor01);
+}
+
+
 
 
 @media screen and (max-width: 1020px) {
@@ -156,4 +208,16 @@ footer .div .padroeira {
         background-color: var(--cor01);
         font-size: 100%;
     }
-}
+
+    footer{
+          
+            display:block;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            color: var(--cor08);
+            padding: 3%;
+            text-decoration: none;
+            }
+    }
