@@ -214,7 +214,7 @@ footer hr {
     }
 
     footer{
-          
+
             display:block;
             flex-direction: column-reverse;
             justify-content: space-around;
@@ -227,4 +227,9 @@ footer hr {
     footer hr {
         display: block;
     }
+ 
+    footer img, h5{
+        display: none;
+    }
+
     }
