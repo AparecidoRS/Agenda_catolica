@@ -77,7 +77,7 @@ div h1{
     color: var(--cor08);
 }
 
-h2{
+h3{
     padding: 10px;
     text-align: center;
     color: var(--cor03);
@@ -144,5 +144,12 @@ footer > .rodape > p a{
             font-size:20px;
             text-align: justify;
             text-indent: 20px; 
+        }
+        .rodape p{
+            background-color: var(--deg2);
+            border-radius: 10px;
+            text-align: center;
+            margin: auto;
+            text-indent: 0px; 
         }
     }
