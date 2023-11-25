@@ -425,6 +425,7 @@ footer .line-footer p i {
     font-size: 30px;
 }
 
+
 .borda {
     border-top: 2px solid var(--cor01);
 }
@@ -571,6 +572,10 @@ footer .line-footer p i {
         height: 80%;
     }
 
+    footer .logo-footer img{
+        display: none;        
+    }
+
     footer .line-footer .pix {
         font-size: 25px;
         align-items: center;
@@ -581,6 +586,7 @@ footer .line-footer p i {
     footer .line-footer .valor {
         font-size: .8em;
     }
+
 
     .especialidade .especialidade-box h3 {
         font-size: 23px;
