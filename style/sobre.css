@@ -47,11 +47,12 @@ h3{
 }
 
 p{
-    padding: 10px;
     color: var(--cor09);
     font-size: 1.5em;
     text-align: justify;
-    text-indent: 30px; 
+    text-indent: 30px;
+    margin: 10px 10px 10px 10px; 
+    
 }
 
 main {
@@ -66,3 +67,15 @@ main {
 main img {
    width: 100%;
 }
+
+@media screen and (max-width: 1020px) {
+    p{
+        padding: 10px;
+        color: var(--cor09);
+        font-size: 1.2em;
+        text-align: justify;
+        text-indent: 30px;
+        gap: 4%;
+    }
+}
+
