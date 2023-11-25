@@ -9,6 +9,7 @@
     --cor06: #f2f2f2;
     --cor07: #aab0b8;
     --cor08: #ffffff;
+    --cor09: #000000;
     /* degrade*/
     --deg1: #02182A;
     --deg2: #408AF5;
@@ -68,6 +69,20 @@ main img {
    width: 100%;
 }
 
+footer{
+    background-color: var(--cor09);
+    display: block;
+    text-align: center;
+}
+.rodape button{
+    font-size: 30px;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: #418EF2;
+    border: none;
+}
+
 @media screen and (max-width: 1020px) {
     p{
         padding: 10px;
@@ -77,5 +92,15 @@ main img {
         text-indent: 30px;
         margin: 15px;
     }
+    .rodape button{
+        font-size: 30px;
+        padding: 10px;
+        width: 50%;
+        height: 50px;
+        background-color: #418EF2;
+        margin-bottom: 30px;
+        border-radius: 50px;
+    }
+    
 }
 
