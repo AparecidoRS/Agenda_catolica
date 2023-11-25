@@ -9,6 +9,8 @@
     --cor06: #f2f2f2;
     --cor07: #aab0b8;
     --cor08: #ffffff;
+    --cor09: #000000;
+
     /* degrade*/
     --deg1: #02182A;
     --deg2: #408AF5;
@@ -24,21 +26,57 @@ body{
     background-color: #0B2042;
     padding: 1%;
 }
+
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;   
+}
+
+details {
+    width: 100%;
+    max-width: 600px ;
+
+}
+
+section details summary{
+    background-color:var(--cor04);
+    padding: 5%;
+    border-bottom: 2px solid var(--cor01);
+    color: var(--cor09);
+    font-weight:600;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+section details p {
+    background-color: var(--cor08);
+    color: var(--cor09);
+    padding: 2%;
+    font-size: 1.6em;
+}
+
 .img{
     display: block;
     margin: auto;
     max-width: 200px;
 }
 
-
-
-p {
+h1{
     display: block;
     text-align: center;
     font-size: 1.5em;
     padding: 5px 1px 50px 0px;
     text-transform: uppercase;
     }
+    
+h2 {
+        display: block;
+        text-align: center;
+        padding: 5px 1px 50px 0px;
+                }
 .container{
     padding: .98rem;
     margin: auto;
