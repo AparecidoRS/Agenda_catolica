@@ -424,6 +424,10 @@ footer .logo-footer img{
     border-radius: 20%;
 }
 
+.logo-footer .Padroeira{
+    color: var(--cor08);
+}
+
 /*button flutuante*/
 .button{
     display: flexbox;
@@ -572,6 +576,15 @@ gap: 4%;
     footer .line-footer .valor {
         font-size: .8em;
     }
+
+   footer .logo-footer img{
+        display: none;        
+    }
+
+    .logo-footer .Padroeira{
+        display: none;
+    }
+  
     .especialidade .especialidade-box h3 {
         font-size: 23px;
         margin: 10px 0;
