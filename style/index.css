@@ -220,7 +220,7 @@ footer a:hover button{
     position: absolute;
     height: 100%;
     border-left: 2px solid var(--deg2); /* cor de animação*/
-    right: -5px;
+    right: -8px;
     animation: cursor .8s infinite, digita 20s steps(15) infinite;
     width: calc(100% + 15px);
     background-color: var(--deg1) ;
@@ -243,16 +243,16 @@ footer a:hover button{
 
  @keyframes palavras {
     0%,20%{
-        content: "Sua paroquia na web.";
-    }
-    21%,40%{
         content: "Horário de missa.";
     }
-    41%,60%{
+    21%,40%{
         content: "Avisos paroquiais.";
     }
-    61%,80%{
+    41%,60%{
         content: "Atividades pastorais.";
+    }
+    61%,80%{
+        content: "Atividade paroquiais.";
     }
     81%,100%{
         content: "Plano pastoral.";
