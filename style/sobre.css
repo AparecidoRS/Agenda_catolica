@@ -75,7 +75,7 @@ main img {
         font-size: 1.2em;
         text-align: justify;
         text-indent: 30px;
-        gap: 4%;
+        margin: 15px;
     }
 }
 
