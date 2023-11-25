@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: #418EF2;
+    --cor02: #224D73;
+    --cor03: #011624;
+    --cor04: #E2DEBF;
+    --cor05: #825834;
+    --cor06: #f2f2f2;
+    --cor07: #aab0b8;
+    --cor08: #ffffff;
+    /* degrade*/
+    --deg1: #02182A;
+    --deg2: #408AF5;
+    --deg3: #0B2042;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* ESTILO GERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--cor03);
+}
+
+main{
+    background-color: var(--cor06);
+}
+h1{
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    color: var(--cor03);
+}
+
+h3{
+    padding: 10px;
+    text-align: center;
+    color: var(--cor03);
+}
+
+p{
+    padding: 10px;
+    color: var(--cor09);
+    font-size: 1.5em;
+    text-align: justify;
+    text-indent: 30px; 
+}
+
+main {
+   max-width: 1380px;
+   display: block;
+   justify-content: center;
+   text-align: center;
+   margin: auto;
+   
+}
+
+main img {
+   width: 100%;
+}
