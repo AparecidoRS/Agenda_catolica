@@ -63,16 +63,17 @@ body {
     max-width: 1380px;
     margin: auto;
     padding: 20px 50px;
-    background-color: var(--cor02);
+    background-color: var(--deg3);
 }    
 .avisos h1{
     text-transform: uppercase;
+    color:var(--cor08) ;
     
     }
 
 .avisos p{
     color:var(--cor08) ;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: left;
     padding: 10px;
     text-indent: 30px;
@@ -500,10 +501,10 @@ gap: 4%;
     }
 
 .avisos p{
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: justify;
     padding: 10px;
-    text-indent: 30px;
+    text-indent: 0px;
     margin: auto;
     gap: 2%;
 }

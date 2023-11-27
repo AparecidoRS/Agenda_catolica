@@ -535,7 +535,7 @@ footer .line-footer p i {
     }
 
     /*CABEÇALHO*/
-    .menu-desktop, btn-contato-menu{
+    .menu-desktop{
         display: none;
     }
 
@@ -578,7 +578,8 @@ footer .line-footer p i {
         margin-top: -10px;
     }
 
-    .btn-social {
+    .btn-social button {
+        display: inline;
         text-align: center;
     }
 
@@ -629,7 +630,5 @@ footer .line-footer p i {
     .menu-mobile {
         display: block;
     }
-
-
 
 }
