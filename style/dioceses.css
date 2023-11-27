@@ -89,6 +89,17 @@ body {
     transition: .2s;
 }
 
+.btn-contato-menu button {
+    padding: 10px 40px;
+    font-size: 18;
+    font-weight: 600;
+    background-color: var(--cor01);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
 footer .logo-footer img {
     border-radius: 20%;
 }
@@ -524,10 +535,14 @@ footer .line-footer p i {
     }
 
     /*CABEÇALHO*/
-    .menu-desktop,
-    .btn-contato {
+    .menu-desktop, btn-contato-menu{
         display: none;
     }
+
+    .btn-contato button {
+        display: block;
+    }
+  
 
     /*TOPO SITE*/
     section.topo-do-site .flex {

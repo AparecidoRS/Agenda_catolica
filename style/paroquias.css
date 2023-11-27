@@ -118,6 +118,18 @@ body {
     transition: .2s;
 }
 
+
+.btn-contato-menu button {
+    padding: 10px 40px;
+    font-size: 18;
+    font-weight: 600;
+    background-color: var(--cor01);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
 h2.titulo {
     color: var(--cor03);
     font-size: 38px;
@@ -517,9 +529,16 @@ gap: 4%;
         
      }
     /*CABEÇALHO*/
-    .menu-desktop,
-    .btn-contato {
+    .menu-desktop{   
         display: none;
+    }
+
+    .btn-contato button {
+        display: block;
+    }
+
+    .btn-contato button a{
+        text-decoration: none;
     }
 
     /*TOPO SITE*/
