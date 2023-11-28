@@ -33,108 +33,90 @@ body {
 }
 body{
     background-color: var(--cor02);
-    height: 500px;
+    
+}
+header {
+    margin: 0px 0px 25px 0px;
 }
 
-section{
-    display: inline-block;
-    text-align: center;
-}
-
-section.setores{
-    margin: auto;       
-    }
-
-section.setores .flex{
+.cabecalho img{
     margin: auto;
-    gap: 20px ;
+    padding: 20px 0px 20px 0px;
+    display: block;
+    justify-content: center;
+    border-radius: 50px;    
 }
-section.setores img{
-    display: flex;
-    margin: auto;
+
+.cabecalho p{
+    margin-top: 5px;
+    display: block;
+    font-size: 1.5em;
+    gap: 4%;
+    color: var(--cor08);
     text-align: center;
+    justify-content: center;  
+}
+
+main {
+    background-color:var(--cor08);
+    margin: auto;
+    max-width: 1380px;
     justify-content: center;
 }
 
-section.setores h1{
-    font-family: 'Kaushan Script'; 
-    text-align: center;
-    color: var(--cor08);
-}
-section.setores h1 span{
+i {
+    font-size: 40px;
+    align-items: center;
     color: var(--cor01);
 }
-.interface{
-    max-width: 1280px;
-}
 
-.flex{
+.container {
     display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-around ;
 }
 
-.interface .interface-box{
-    display: inline-block;
-    color: var(--cor06);
-    padding: 40px;
-    border-radius: 20px;
-    margin-top: 40px;
-    background-color: var(--cor03);
-    transition: .2s;
+.texto {
+    background-color: var(--cor06);
+    border-radius: 15px;
+    width: 350px;
+    margin: 10px;
+    display: flex;    
+    gap: 4%; 
+    padding: 10px 10px 10px 30px;   
 }
 
-.interface .interface-box:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 20px;
+.caixa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-around ;
+    font-size: 50px;
+    margin-top: 30px;
 }
 
-.interface .interface-box i {
-    margin: auto;
-    display: block;
+footer .picture img{
+    margin: 100px;
+    display:block;
     text-align: center;
-    font-size:  50px;
-    color: #418EF2;
+    justify-content:center ;
+    padding: 100px 10px 100px 10px;
 }
-.interface .interface-box h1{
-    font-size: 35px;
-    margin: 15px 0;
-}
-
-h1{
-    color: var(--cor08);
-}
-
-h2 {
-    margin: auto;
-    display: block;
-    text-align: center;
-}
-
-p {
-    padding: 15px 0px 0px 0px;
-    margin: auto;
-    display: block;
-    text-align: center;
-}
-
-input[type=submit] {
-    margin: auto;  
-    margin-top: 45px;
-    display: block;
-    font-size: 1.2em;
-    width: 200px;
-    height: 40px;
-    background-color: var(--cor01);
-    color: var(--cor04);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
+  
 @media screen and (max-width: 1020px){
-    .flex {
-        flex-direction: column;
+   
+    .texto {
+        background-color: var(--cor03);
+        color: var(--cor08);
+        border-radius: 15px;
+        width: 350px;
+        margin: 10px 10px 10px 10px;
+        display: flex;    
+        gap: 5%; 
+        padding: 10px 10px 10px 35px;   
     }
-    section.setores .flex{
-        gap: 10px ;
-    }
+    
+  
+
 }
