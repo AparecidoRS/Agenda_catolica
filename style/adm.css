@@ -20,6 +20,7 @@ body {
     --cor06: #f2f2f2;
     --cor07: #aab0b8;
     --cor08: #ffffff;
+    --cor09: #000000;
     /* degrade*/
     --deg1: #02182A;
     --deg2: #408AF5;
@@ -40,11 +41,12 @@ header {
 }
 
 .cabecalho img{
+    width: 200px;
     margin: auto;
     padding: 20px 0px 20px 0px;
     display: block;
     justify-content: center;
-    border-radius: 50px;    
+    border-radius: 100px;    
 }
 
 .cabecalho p{
@@ -62,6 +64,7 @@ main {
     margin: auto;
     max-width: 1380px;
     justify-content: center;
+    
 }
 
 i {
@@ -71,6 +74,8 @@ i {
 }
 
 .container {
+    padding: 5%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -87,24 +92,53 @@ i {
     padding: 10px 10px 10px 30px;   
 }
 
+input[type="submit"]{
+    margin-top:10px;
+    padding:10px;
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--cor09);
+    font-weight: bold;
+    color: var(--cor08);
+    cursor: pointer; 
+}
+
+
+input[type="submit"]:hover {
+    background-color: var(--deg2);
+}
+
+
 .caixa {
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    justify-content:space-around ;
+    justify-content:space-around;
     font-size: 50px;
     margin-top: 30px;
 }
 
-footer .picture img{
-    margin: 100px;
-    display:block;
-    text-align: center;
-    justify-content:center ;
-    padding: 100px 10px 100px 10px;
+.image{ 
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-around
+    
+    
 }
   
 @media screen and (max-width: 1020px){
+
+    .cabecalho img{
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+        display: block;
+        justify-content: center;
+        border-radius: 0px;    
+    }
    
     .texto {
         background-color: var(--cor03);
@@ -116,7 +150,21 @@ footer .picture img{
         gap: 5%; 
         padding: 10px 10px 10px 35px;   
     }
-    
-  
 
-}
+    input[type="submit"]{
+        width: 150px; 
+        background-color: var(--cor01);
+        color: var(--cor08);
+        font-size: 1.2em;        
+    }
+    
+    
+    input[type="submit"]:hover {
+        background-color: var(--deg2);
+    }
+
+    .image{ 
+        margin: 20px 10px 30px 10px;
+        }
+
+    }
