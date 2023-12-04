@@ -49,7 +49,7 @@ h3{
 
 p{
     color: var(--cor09);
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: justify;
     text-indent: 30px;
     margin: 10px 10px 10px 10px; 
@@ -66,7 +66,16 @@ main {
 }
 
 main img {
-   width: 100%;
+   width: 40%;
+}
+
+.sobre-nsap {
+    max-width: 900px;
+    display: block;
+   justify-content: center;
+   text-align: center;
+   margin: auto;
+
 }
 
 footer{
