@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <title>Cadastro de Paróquias</title>
+    <title>Cadastro de Capelas</title>
     <link rel="stylesheet" href="style/form.css">
 </head>
 <body>
@@ -12,11 +12,16 @@
             <picture>
                 <a href="template-adm.html"><img class="img" src="images/logos/Agenda_católica_-_Preto.png" alt="" title="Clique aqui para voltar(ADM)"></a>
             </picture>
-        <h1>Cadastro de Paróquias</h1>
+        <h1>Cadastro de Capelas</h1>
         <form action="POST">
             
             <div class="caixa">
                 <label>Arquidiocese/Diocese:</label>
+                <input type="text">
+            </div>
+
+            <div class="caixa">
+                <label>Nome da Capela:</label>
                 <input type="text">
             </div>
             
@@ -24,7 +29,7 @@
                 <label>Nome da Paróquia:</label>
                 <input type="text">
             </div>
-            
+
             <div class="caixa">
                 <label>Padroeiro(a):</label>
                 <input type="text">
@@ -119,20 +124,14 @@
                 <label>Imagem da Paroquia: (png, jpg, jpeg)</label>
                 <input type="file" accept=".png,.jpg,.jpeg">
             </div>
-            <br>   
-            
-            <br>
-            <div class="usuario">
-                <h2>Usuário Administrador</h2>
-            </div>
-            <br> <br>
-
+                    
             <div class="caixa">
                 <label>Senha Usuário:</label>
                 <input type="text">
             </div>
 
-            
+            <br>
+            <br>
             <div class="caixa">
                 <input type="submit" value="Enviar">
             </div> 

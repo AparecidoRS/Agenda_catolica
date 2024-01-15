@@ -26,10 +26,14 @@
     <header id="inicio">
         <div class="interface">
             <div class="logo">
-                <img src="images/modelo-diocese.png" class="imglogo" alt="">
-                <img src="images/modelo-diocese.png" class="imglogo2" alt="">
-
-            </div><!--logo-->
+    <!-- logos -->   
+                <img src="images/modelo-diocese.png" class="imglogo" alt=""> <!--logo desktop -->
+                <img src="images/modelo-diocese.png" class="imglogo2" alt=""> <!--logo mobile --> 
+            </div><!-- final div logo-->
+     <!-- final logos -->
+     
+     
+     <!--menu-desktop-->           
             <nav class="menu-desktop">
                 <ul>
                     <li><a href="#missas">Missas</a></li>
@@ -46,13 +50,19 @@
                 </a>
             </div>
         </div><!--interface-->
+     <!-- Final menu-desktop -->  
+     
+     
+     <!-- dados basicos da diocese/Arquidiocese -->  
         <h1 class="logoparoquia">Nome da diocese/Arquidiocese</h1>
         <p class="contatoparoquia"><a href="#"> <i class="bi bi-geo-alt-fill"></i> Endereço da Curia <br>Bairro - Cidade-UF</a><br><strong>
             <a href="tel:+55XXXXXXXXXX"><i class="bi bi-telephone-fill"></i>(XX) XXXX-XXXX</a></strong></p>
     </header>
     <main>
+        <!-- final dados basicos da diocese/Arquidiocese -->
 
-        <!--menu-mobile-->
+
+        <!--inicio menu-mobile-->
         <div class="menu-mobile">
 
             <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
@@ -68,29 +78,29 @@
                 </ul>
             </menu>
         </div>
+       <!--Fim menu-mobile-->
 
-        <!--menu-mobile-->
-
-        <!-- Atividades paroquiais-->
+        <!-- Atividades diocesanas-->
         <section class="topo-do-site">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
                         <h1>ATIVIDADES <span> PARA HOJE.</span></h1>
-                        <!--Inicio da ATIVIDADES DIOCESANO PARA HOJE-->
+
+        <!--Inicio da tabela atividades diocesana para hoje -->
                         <div class="tabela">
                             <table>
-                                <CAption> Sexta-feira, 23 de novembro de 2023 </CAption>
+                                <CAption>[dia] de [mes] de [anos] </CAption>
                                 <thead>
                                     <tr>
                                         <th scope="col">Horario</th>
-                                        <th scope="col" style="width: 70%;">Descrição</th>
+                                        <th scope="col" style="width: 80%;" class="coluna">Atividade</th>
                                     </tr>
                                 </thead>
                                 <tbody>
 
                                     <tr>
-                                        <td class="horario">11:</td>
+                                        <td class="horario">11:00</td>
                                         <td>
                                             Renovação Carismática Católica: Retiro para jovem na Paróquia Rainha dos
                                             Apóstolos
@@ -99,7 +109,7 @@
                                    
                                 </tbody>
                             </table>
-                            <!--Final da Tabela PLANO PASTORAL DIOCESANO-->
+        <!--Final da tabela atividades diocesana para hoje -->
 
                             <p><strong>Nosso propósito é</strong> divulgar horários e eventos na Igreja Católica, <strong>Não perca eventos importantes na sua comunidade.</strong></p>
 
@@ -110,7 +120,9 @@
                     </div><!--flex-->
                 </div><!--interfacee-->
         </section><!--topo-do-site-->
-        <!-- termina aqui Atividades paroquiais-->
+        <!-- termina aqui atividades diocesana para hoje -->
+
+
 
         <!-- horarios de atendimento-->
         <section class="topo-do-site">
@@ -143,47 +155,35 @@
         <!-- termina aqui horarios de atendimeto-->
 
 
-
-
-
         <!-- horarios de missas-->
         <section class="topo-do-site">
             <div class="interface">
                 <div class="flex">
                     <div id="missas" class="txt-topo-site">
                         <h1>HORÁRIOS DE MISSA<span> NAS PAROQUIAIS.</span></h1>
-                        <!--Inicio da Missas na Diocese-->
+
+        <!--Inicio tabela de Missas na Diocese-->
                         <div class="tabela">
                             <table>
-                                <CAption> Sexta-feira, 3 de novembro de 2003 </CAption>
+                                
                                 <thead>
                                     <tr>
-                                        <th scope="col">Horarios</th>
-                                        <th scope="col" style="width: 70%;">Local</th>
-                                        <th scope="col">Cidade</th>
+                                        <th scope="col">Data | Hora</th>
+                                        <th scope="col" style="width: 80%;" class="coluna">Paroquia / Cidade</th>
+                                        
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="horario">19:00</td>
-                                        <td>Catedral Nossa Senhora Aparecida</td>
-                                        <td>Cascavel-PR</td>
+                                        <td class="data">01/01 <strong>7:00</strong></td>
+                                        <td>Catedral Nossa Senhora Aparecida - Cascavel-PR</td>
                                     </tr>
-                                    <tr>
-                                        <td class="horario">19:00</td>
-                                        <td>Paróquia Santo Antonio</td>
-                                        <td>Cascavel-PR</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="horario">20:00</td>
-                                        <td>Paróquia Nossa Senhora do Perpétuo Socorro</td>
-                                        <td>Cascavel-PR</td>
-                                    </tr>
+                                    
                                 </tbody>
                             </table>
-                            <!--Final da Missas na Diocese-->
+        <!--Final da tabela Missas na Diocese-->
 
-                            <p><strong>Nosso propósito</strong> é divulgar horários e eventos na Igreja Católica, <strong>Não perca horários de Missas.</strong></p>
+                            <p><strong>Nosso propósito</strong> é divulgar horários e eventos na Igreja Católica, Confira dias e horários de missas.<strong> Não perca horários de Missas.</strong></p>
 
                            
                         </div><!--txt-topo-site-->
@@ -200,29 +200,26 @@
                     <div id="pastorais" class="txt-topo-site">
                         <h1>PASTORAIS | <span>MOVIMENTOS.</span></h1>
 
-                        <!--Inicio PASTORAIS MOVIMENTOS Diocese-->
+        <!--Inicio tabela pastorais e movimentos Diocese-->
                         <div class="tabela">
                             <table>
-                                <CAption> NOVEMBRO </CAption>
+                                
                                 <thead>
                                     <tr>
                                         <th scope="col">Dia</th>
-                                        <th scope="col">Pastoral/Movimeto</th>
-                                        <th scope="col">Local</th>
+                                        <th scope="col" style="width: 80%;" class="coluna">Atividade</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
 
                                     <tr>
-                                        <td class="horario">04/11</td>
-                                        <td scope="linha">Pastoral da Criança: Assembleia avaliativa</td>
-                                        <td scope="linha">Paróquia São Cristóvão - Cascavel-PR</td>
+                                        <td class="horario">01/04</td>
+                                        <td scope="linha">Pastoral da Criança: Assembleia avaliativa - Paróquia São Cristóvão</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <!--Final da PASTORAIS MOVIMENTOS Diocese Diocese-->
-
+        <!--Final da tabela pastorais e movimentos Diocese-->
 
                             <p><strong>Ação pastoral da Igreja no Brasil</strong> ou simplesmente pastoral é a ação da Igreja Católica no mundo ou o conjunto de atividades pelas quais a Igreja realiza a sua missão de <strong>continuar a ação de Jesus Cristo</strong> junto a diferentes grupos e realidades.</p>
 
@@ -236,34 +233,34 @@
         </section><!--topo-do-site-->
         <!-- termina aqui pastorais -->
 
+
         <!-- PLANO PASTORAL -->
         <section class="topo-do-site">
             <div class="interface">
                 <div class="flex">
                     <div id="plano" class="txt-topo-site">
-                        <h1>PLANO PASTORAL<span> DIOCESANO .</span></h1>
-                        <!--Inicio da Tabela PLANO PASTORAL DIOCESANO-->
+                         
+                        <h1>CALENDÁRIO PASTORAL <span> 2024.</span></h1>
+        <!--Inicio da Tabela PLANO PASTORAL DIOCESANO-->
                         <div class="tabela">
                             <table>
-                                <CAption> JANEIRO/24 </CAption>
+                                
                                 <thead>
                                     <tr>
-                                        <th scope="col">Data</th>
-                                        <th scope="col" style="width: 70%;">Descrição</th>
+                                        <th scope="col">Dia</th>
+                                        <th scope="col" style="width: 80%;" class="coluna">Atividade</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                                                        
                                     <tr>
-                                        <td class="data"> </td>
-                                        <td> </td>
+                                        <td class="horario">01/04</td>
+                                        <td scope="linha">Pastoral da Criança: Assembleia avaliativa - Paróquia São Cristóvão</td>
                                     </tr>
-                                    
-                                   
 
                                 </tbody>
                             </table>
-                            <!--Final da Tabela PLANO PASTORAL DIOCESANO-->
+        <!--Final da Tabela PLANO PASTORAL DIOCESANO-->
 
                             <p><strong>O plano pastoral</strong> é o resultado de um caminho trilhado pela comunidade em vista de um <strong>planejamento de evangelização.</strong></p> 
 
@@ -276,6 +273,7 @@
             </div><!--interfacee-->
         </section><!--topo-do-site-->
         <!-- termina aqui Plano pastoral -->
+
         <!--Sobre-->
         <section class="sobre">
             <div class="interface">
@@ -284,6 +282,8 @@
                         <img src="images/modelo-diocese.png" alt="" width="450">
                     </div><!--img-sobre-->
                     <div class="txt-sobre">
+
+        <!-- dados da Diocese -->                 
                         <h2>Sobre:<span> Nome da Diocese / Arquidiocese.</span></h2>
                         <p><strong>Cúria</strong>: Nome da curia<br>
                             <strong>Arcebispos: </strong>Nome do Arcebispo <br>
@@ -295,6 +295,9 @@
                             <strong>Email: </strong>email@email <br>
                             <strong>Site: </strong> <a href="site" target="_blank">site</a>
                         </p>
+        <!-- final dados da Diocese -->
+
+        <!-- redes sociais -->
                         <div class="btn-social">
                             <a href=""><button><i class="bi bi-instagram"></i></button></a>
                             <a href=""><button><i class="bi bi-facebook"></i></button></a>
@@ -305,13 +308,19 @@
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--Sobre-->
-        
+        <!-- final redes sociais -->  
+
+
+        <!-- mapa -->    
         <div class="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2902686108378!2d-53.4556727!3d-24.956236999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d41335d48063%3A0xcbceb3d4802a920d!2sR.%20Rio%20Grande%20do%20Sul%2C%20590%20-%20Centro%2C%20Cascavel%20-%20PR%2C%2085801-010!5e0!3m2!1spt-BR!2sbr!4v1699460771970!5m2!1spt-BR!2sbr" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
+        <!-- termina aqui mapa -->
 
     </main>
+
+
+    <!-- roda pé -->   
     <footer>
         <div class="interface">
             <div class="line-footer">
@@ -331,17 +340,24 @@
             </div><!--line-footer-->
             <div class="line-footer borda">
                 <h3>Ajude a manter esse serviço ativo.</h3>
-                <p class="pix" id="pix"><i class="bi bi-x-diamond-fill"></i> Pix: <span>XXXXXXXXXXXXX</span></p>
-                <p class="valor"> Chave pix da NOME INSTITUIÇÃO <span>(identificar Ag. Catolica)</span>
+                <p class="pix" id="pix"><i class="bi bi-x-diamond-fill"></i> 
+    <!-- Pix da Diocese --> 
+                    Pix: <span>XXXXXXXXXXXXX</span></p>
+
+                <p class="valor"> Chave pix da [NOME INSTITUIÇÃO] <span>(identificar Ag. Catolica)</span>
                 </p>
+    <!-- final Pix da Diocese --> 
             </div><!--line-footer-->
         </div><!--interface-->
     </footer>
+
+    <!-- button lateral --> 
     <button class="button">
         <a href="#"><i class="bi bi-caret-up-square-fill"></i></a> <br>
         <a href="#pastorais"><i class="bi bi-distribute-vertical"></i></a> <br>
         <a href="#pix"><i class="bi bi-caret-down-square-fill"></i></a>
     </button>
+    <!-- termina aqui button lateral -->
     <script>
         function clickMenu() {
             if (itens.style.display == 'block') {

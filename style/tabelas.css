@@ -7,6 +7,7 @@
     --cor04: #E2DEBF;
     --cor05: #825834;
     --cor06: #aab0b8;
+    --cor07: #ffffff;
     /* degrade*/
     --deg1: #02182A;
     --deg2: #408AF5;
@@ -34,6 +35,7 @@ caption {
     font-weight: bold;
     padding: 10px;
     background-color: var(--cor02);
+    color: var(--cor07);
 }
 
 thead,
@@ -68,4 +70,12 @@ td.horario {
 
 td.data{
     text-align: center;
+}
+
+td.hora{
+    text-align: center;
+}
+
+th.coluna{
+    text-align: left;
 }
